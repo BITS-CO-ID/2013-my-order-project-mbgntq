@@ -1,0 +1,252 @@
+﻿.small
+{
+}
+.large
+{
+    width: 250px;
+}
+
+div.post {
+	border: 1px solid silver;
+	padding: 1px;
+	margin-bottom: 16px;
+}
+div.posttop {
+	padding: 4px;
+	background: #EEEEEE;
+}
+div.username {
+	font-weight: bold;
+	width: auto;
+	float: left;
+}
+div.date {
+	width: auto;
+	text-align: right;
+}
+div.posttext {
+	padding: 4px;
+	background: #F9F9F9;
+}
+
+div.postcontrol {
+	padding: 4px;
+	background: #F9F9F9;
+	text-align: right;
+}
+
+div.highlight {
+	padding: 4px;
+	background: #FFFFCC;
+}
+
+.pagination{
+	float: left;
+	margin:0;
+}
+.pagination a{
+	display:inline-block;
+	padding:5px 10px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	margin:2px;
+	color: #272d2b;
+	border: 1px solid #c1b59d;
+	font-weight:bold;
+	background:#FFF;
+}
+.pagination a:hover{
+	color: #f15119;
+	text-shadow:none;
+}
+.pagination a.selected{
+	color: #f15119;
+}
+.pagination a i{
+	line-height:0;
+	color: #272d2b;
+}
+
+
+.btnLine
+{
+    border-top: 1px solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+input.Textbox, input.textbox, input.datepicker
+{
+    width: 200px;
+    border: #7f9db9 1px solid;
+    padding: 5px 0;
+}
+
+input.datepicker
+{
+    width: 170px;
+    border: #7f9db9 1px solid;
+    padding: 5px 0;
+}
+
+input.cktextbox
+{
+    height: 369px;
+    width:100%;
+    border: #7f9db9 1px solid;
+    padding: 5px 0;
+}
+
+/* start Gridview*/
+
+
+.Gridview
+{
+    width: 100%;
+}
+.Gridview .trbdr td, .Gridview th, .Gridview .trbdr .td, .Gridview .th
+{
+    height: 27px;
+    padding: 0 1px;
+}
+
+
+.Gridview td, .Gridview th, .Gridview .trbdr td, .Gridview .trbdr .td, .rfdGrids .rfdTable th, .rfdGrids .rfdTable td
+{
+    border: #014586 1px solid;
+}
+.Gridview th
+{
+    font-size: 12px;
+    padding: 4px;
+    white-space: nowrap;
+}
+.Gridview td
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #000;
+    padding: 4px;
+    white-space: nowrap;
+}
+.Gridview th, .Gridview .th, .RadForm_Default.rfdGrids .rfdTable th
+{
+    background-color: #efefef;
+    font-weight: bold;
+    text-align: center;
+    color: #014586;
+}
+.Gridview tr:hover
+{
+    background-color: #fffee6;
+}
+
+/*gridview*/
+.gridview
+{
+    width: 100%;
+}
+.gridview .trbdr td, .gridview th, .gridview .trbdr .td, .gridview .th
+{
+    height: 27px;
+    padding: 0 1px;
+    text-align: center;
+}
+
+
+.gridview td, .gridview th, .gridview .trbdr td, .gridview .trbdr .td, .rfdGrids .rfdTable th, .rfdGrids .rfdTable td
+{
+    border: #014586 1px solid;
+}
+.gridview th
+{
+    font-size: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    white-space: nowrap;
+}
+.gridview td
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #000;
+    padding: 4px;
+    white-space: wrap;
+}
+.gridview th, .gridview .th, .RadForm_Default.rfdGrids .rfdTable th
+{
+    background-color: #efefef;
+    font-weight: bold;
+    color: #014586;
+}
+.gridview tr:hover
+{
+    background-color: #fffee6;
+}
+
+.Button, .button
+{
+
+    display: inline-block;
+    text-decoration: none;
+    font: bold 12px/12px HelveticaNeue, Arial;
+    padding: 5px 10px;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #f5f5f5;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f0f0f0'); /*  IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f0f0f0)); /*  WebKit */
+    background: -moz-linear-gradient(top,  #f9f9f9, #f0f0f0);
+    color: #014586;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+    -moz-box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+    box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+    border: #7f9db9 1px solid;
+    cursor:pointer;
+}
+
+.buttonDisable
+{
+    display: inline-block;
+    text-decoration: none;
+    font: bold 12px/12px HelveticaNeue, Arial;
+    padding: 5px 10px;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #EFEFEF;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f0f0f0'); /*  IE */
+    text-shadow: 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+    -moz-box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+    border: #7f9db9 1px solid;
+    cursor:pointer;
+}
+
+.Cbo, .cbo, .select
+{
+    width: 200px;
+    padding: 5px 0;
+    border: #7f9db9 1px solid;
+}
+
+.validate
+{
+    font-style: italic;
+    color: red;
+    font-size: small;
+}
+
+.doubleNumber
+{
+    text-align: right;
+}

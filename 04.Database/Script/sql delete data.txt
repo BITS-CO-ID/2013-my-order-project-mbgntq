@@ -1,0 +1,15 @@
+delete from dbo.Invoice
+
+delete from dbo.CustomerBalanceHistory
+
+delete from dbo.OrderHistory
+delete from dbo.[Order]
+
+delete from dbo.OrderOutboundHistory
+delete from dbo.[OrderOutbound]
+
+---select * from customer
+
+update customer
+set balance =0
+

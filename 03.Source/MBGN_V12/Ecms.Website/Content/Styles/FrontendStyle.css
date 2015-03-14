@@ -1,0 +1,300 @@
+﻿.required
+{
+    color: red;
+}
+
+.tdFirst
+{
+    width: 170px;
+}
+
+.indend
+{
+    padding-left: 50px;
+}
+
+.gridview
+{
+    padding: 5px 5px;
+    font-size:12px;
+}
+
+.gridview th
+{
+    line-height: 1.7em;
+    color: #014586;
+    border: 1px solid silver;
+    background-color: #EFEFEF;
+    padding:5px;
+}
+
+.gridview td
+{
+    color: #555555;
+    border: 1px solid silver;
+    padding:5px;
+}
+
+.gridview tr:hover
+{
+    background-color: #fffde6;
+    color: #FAFAFA;
+    border: 1px solid silver;
+}
+
+.gridview a:link, .gridview a:visited, .gridview a:active
+{
+    text-decoration: none;
+    color: #1C63D5;
+    padding:5px;
+}
+
+.gridviewScroll
+{
+    padding: 5px 5px;
+    width: 180%;
+}
+
+.gridviewScroll th
+{
+    line-height: 1.7em;
+    color: #014586;
+    border: 1px solid silver;
+    background-color: #EFEFEF;
+}
+
+.gridviewScroll td
+{
+    color: #555555;
+    border: 1px solid silver;
+}
+
+.gridviewScroll tr:hover
+{
+    background-color: #fffde6;
+    color: #FAFAFA;
+    border: 1px solid silver;
+}
+
+.gridviewScroll a:link, .gridviewScroll a:visited, .gridviewScroll a:active
+{
+    text-decoration: none;
+    color: #1C63D5;
+}
+
+.divScroll
+{
+    height: 280px;
+    overflow: scroll;
+}
+
+.p-note
+{
+    background: url("../images/bg_note.png") repeat-x scroll center bottom transparent;
+    color: #014586;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0 0 9px;
+    text-align: left;
+    width: 100%;
+}
+
+h4.title-page
+{
+    color: #014586;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 10px 0 0;
+    text-align: left;
+}
+
+td.td-bg
+{
+    background: url("../images/bg_note.png") repeat-x scroll center bottom transparent;
+    color: #014586;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.tableForm
+{
+    color: #014586;
+    font-size: 12px;
+}
+
+.customer-image
+{
+    float: left;
+    width: 110px;
+}
+
+.customer-info
+{
+    float: left;
+    width: 550px;
+}
+
+fieldset
+{
+    border: 1px solid #014586;
+}
+
+legend
+{
+    color: #F15A24;
+    font-weight: bold;
+}
+
+.login-tutorial
+{
+    text-align: justify;
+}
+
+.login-tutorial p
+{
+    font-size:12px;
+}
+
+.login-tutorial ul
+{
+    font-size: 12px;
+    list-style-type: none;
+    margin-left: 5px;
+    margin-top: -10px;
+}
+
+.login-tutorial .text-blue
+{
+    color: #014586;
+}
+
+.feedback {
+  margin-left: -20px;
+  width: 700px;
+}
+
+.head_row {
+  background: url("../images/icon_left.png") no-repeat scroll left center transparent;
+  margin-top: 15px;
+  padding: 5px 0 25px 50px;
+}
+.head_row h4.prd {
+  width: 135px;
+}
+
+.head_row h4 {
+  background: url("../images/icon_left.png") no-repeat scroll right center transparent;
+  color: #EF5900;
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.head_row .right_content {
+  background: url("../images/icon_right.png") no-repeat scroll right 6px transparent;
+  float: right;
+  height: 22px;
+  width: 515px;
+}
+
+div.post {
+	border: 1px solid silver;
+	padding: 1px;
+	margin-bottom: 16px;
+}
+div.posttop {
+	padding: 4px;
+	background: #EEEEEE;
+}
+div.username {
+	font-weight: bold;
+	width: auto;
+	float: left;
+}
+div.date {
+	width: auto;
+	text-align: right;
+}
+div.posttext {
+	padding: 4px;
+	background: #F9F9F9;
+}
+
+div.postcontrol {
+	padding: 4px;
+	background: #F9F9F9;
+	text-align: right;
+}
+
+.doubleNumber
+{
+    text-align:right;    
+}
+
+.service-box
+{
+    border: none;
+    }
+
+.abc .service-box li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  width:223px;
+}
+
+#service-item-box-left
+{
+    margin-left:0;
+    width:223px;
+    }
+    
+#service-item-box-center
+{
+    padding-left:15px;
+    width:223px;
+    }
+    
+#service-item-box-right
+{
+    margin-left:15px;
+    padding-left:15px;
+    width:223px;
+    }
+
+.abc .service-box .item-text {
+  margin-top: 10px;
+}
+
+.abcd .service-box li {
+  margin-bottom: 10px;
+  margin-right: 42px;
+  margin-top: 20px;
+}
+
+.abcd .service-box .item-text {  
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+.abcd .service-box .first {
+  margin-left: 18px;
+}
+
+.abcd .service-item-box {
+  float: left;
+}
+
+.abcd .item-image {
+  float: right;
+}
+
+.RadComboBox .rcbInputCell .rcbInput 
+{ 
+    margin-bottom: 0px;
+}

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1781416B-4EE1-4E79-98C7-3DFA7BB802B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ecms.Biz</RootNamespace>
+    <AssemblyName>Ecms.Biz</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Libraries\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CommonBiz.cs" />
+    <Compile Include="Class\ComplaintsBiz.cs" />
+    <Compile Include="Class\NewsBiz.cs" />
+    <Compile Include="Class\OrderBiz.cs" />
+    <Compile Include="Class\ProductBiz.cs" />
+    <Compile Include="Class\ReportBiz.cs" />
+    <Compile Include="Class\StockBiz.cs" />
+    <Compile Include="Class\UserBiz.cs" />
+    <Compile Include="Class\InvoiceBiz.cs" />
+    <Compile Include="Class\CustomerBiz.cs" />
+    <Compile Include="Class\WebsiteBiz.cs" />
+    <Compile Include="Entities\Category.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Company.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Complaint.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ComplaintDetail.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ConfigBusiness.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Country.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Customer.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustomerBalanceHistory.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustomerTemp.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustomerType.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ecms.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ecms.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ecms.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ecms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ecms.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Invoice.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InvoiceDetail.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Inv_Goods.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Inv_StockBalance.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Inv_StockInOut.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Inv_StockInOutDetail.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Menu.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Mst_Bank.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Mst_Business.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Mst_SysAuto.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Mst_VisaAccount.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\News.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\News_Comment.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Order.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrderDetail.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrderHistory.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrderOutbound.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrderOutboundDetail.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrderOutboundHistory.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrderType.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Product.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ProductSalePrice.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Province.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Rpt_DeliverlyConfirmPrint.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Rpt_DeliverlyCPDetail.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Sys_Group.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Sys_MapGroupObject.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Sys_MapUserGroup.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Sys_Object.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Sys_User.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Vendor.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WebsiteAccount.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WebsiteAccountVisa.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\WebsiteLink.cs">
+      <DependentUpon>Ecms.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IComplaints.cs" />
+    <Compile Include="Interfaces\INews.cs" />
+    <Compile Include="Interfaces\IOrderBiz.cs" />
+    <Compile Include="Interfaces\ICommonBiz.cs" />
+    <Compile Include="Interfaces\IProductBiz.cs" />
+    <Compile Include="Interfaces\IStockBiz.cs" />
+    <Compile Include="Interfaces\IUserBiz.cs" />
+    <Compile Include="Interfaces\IInvoiceBiz.cs" />
+    <Compile Include="Interfaces\ICustomerBiz.cs" />
+    <Compile Include="Interfaces\IWebsite.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Entities\Ecms.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Ecms.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entities\Ecms.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Ecms.Context.cs</LastGenOutput>
+      <DependentUpon>Ecms.edmx</DependentUpon>
+    </None>
+    <None Include="Entities\Ecms.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Ecms.cs</LastGenOutput>
+      <DependentUpon>Ecms.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUtis\CommonUtils.csproj">
+      <Project>{51FB6B1C-A191-46EA-926A-9389FB5B9683}</Project>
+      <Name>CommonUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

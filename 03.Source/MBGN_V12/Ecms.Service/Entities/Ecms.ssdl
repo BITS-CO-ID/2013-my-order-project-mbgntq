@@ -1,0 +1,1409 @@
+<Schema Namespace="Ecms_V10Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Ecms_V10ModelStoreContainer">
+    <EntitySet Name="Category" EntityType="Ecms_V10Model.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Company" EntityType="Ecms_V10Model.Store.Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComplaintDetail" EntityType="Ecms_V10Model.Store.ComplaintDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Complaints" EntityType="Ecms_V10Model.Store.Complaints" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConfigBusiness" EntityType="Ecms_V10Model.Store.ConfigBusiness" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Country" EntityType="Ecms_V10Model.Store.Country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customer" EntityType="Ecms_V10Model.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerBalanceHistory" EntityType="Ecms_V10Model.Store.CustomerBalanceHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerTemp" EntityType="Ecms_V10Model.Store.CustomerTemp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerType" EntityType="Ecms_V10Model.Store.CustomerType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inv_Goods" EntityType="Ecms_V10Model.Store.Inv_Goods" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inv_StockBalance" EntityType="Ecms_V10Model.Store.Inv_StockBalance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inv_StockInOut" EntityType="Ecms_V10Model.Store.Inv_StockInOut" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inv_StockInOutDetail" EntityType="Ecms_V10Model.Store.Inv_StockInOutDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoice" EntityType="Ecms_V10Model.Store.Invoice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InvoiceDetail" EntityType="Ecms_V10Model.Store.InvoiceDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menu" EntityType="Ecms_V10Model.Store.Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mst_Bank" EntityType="Ecms_V10Model.Store.Mst_Bank" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mst_Business" EntityType="Ecms_V10Model.Store.Mst_Business" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mst_SysAuto" EntityType="Ecms_V10Model.Store.Mst_SysAuto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mst_VisaAccount" EntityType="Ecms_V10Model.Store.Mst_VisaAccount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News" EntityType="Ecms_V10Model.Store.News" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News_Comment" EntityType="Ecms_V10Model.Store.News_Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order" EntityType="Ecms_V10Model.Store.Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderDetail" EntityType="Ecms_V10Model.Store.OrderDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderHistory" EntityType="Ecms_V10Model.Store.OrderHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderOutbound" EntityType="Ecms_V10Model.Store.OrderOutbound" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderOutboundDetail" EntityType="Ecms_V10Model.Store.OrderOutboundDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderOutboundHistory" EntityType="Ecms_V10Model.Store.OrderOutboundHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderType" EntityType="Ecms_V10Model.Store.OrderType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Product" EntityType="Ecms_V10Model.Store.Product" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductSalePrice" EntityType="Ecms_V10Model.Store.ProductSalePrice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Province" EntityType="Ecms_V10Model.Store.Province" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rpt_DeliverlyConfirmPrint" EntityType="Ecms_V10Model.Store.Rpt_DeliverlyConfirmPrint" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rpt_DeliverlyCPDetail" EntityType="Ecms_V10Model.Store.Rpt_DeliverlyCPDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_Group" EntityType="Ecms_V10Model.Store.Sys_Group" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_MapGroupObject" EntityType="Ecms_V10Model.Store.Sys_MapGroupObject" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_MapUserGroup" EntityType="Ecms_V10Model.Store.Sys_MapUserGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_Object" EntityType="Ecms_V10Model.Store.Sys_Object" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_User" EntityType="Ecms_V10Model.Store.Sys_User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vendor" EntityType="Ecms_V10Model.Store.Vendor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WebsiteAccount" EntityType="Ecms_V10Model.Store.WebsiteAccount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WebsiteAccountVisa" EntityType="Ecms_V10Model.Store.WebsiteAccountVisa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WebsiteLink" EntityType="Ecms_V10Model.Store.WebsiteLink" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Category_Category" Association="Ecms_V10Model.Store.FK_Category_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Category1" EntitySet="Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComplaintDetail_Complaints" Association="Ecms_V10Model.Store.FK_ComplaintDetail_Complaints">
+      <End Role="Complaints" EntitySet="Complaints" />
+      <End Role="ComplaintDetail" EntitySet="ComplaintDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_ConfigBusiness" Association="Ecms_V10Model.Store.FK_ConfigBusiness_ConfigBusiness">
+      <End Role="Mst_Business" EntitySet="Mst_Business" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusiness" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_Country" Association="Ecms_V10Model.Store.FK_ConfigBusiness_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusiness" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_CustomerType" Association="Ecms_V10Model.Store.FK_ConfigBusiness_CustomerType">
+      <End Role="CustomerType" EntitySet="CustomerType" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusiness" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_OrderType" Association="Ecms_V10Model.Store.FK_ConfigBusiness_OrderType">
+      <End Role="OrderType" EntitySet="OrderType" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusiness" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_CustomerType" Association="Ecms_V10Model.Store.FK_Customer_CustomerType">
+      <End Role="CustomerType" EntitySet="CustomerType" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_Sys_User" Association="Ecms_V10Model.Store.FK_Customer_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerBalanceHistory_Invoice" Association="Ecms_V10Model.Store.FK_CustomerBalanceHistory_Invoice">
+      <End Role="Invoice" EntitySet="Invoice" />
+      <End Role="CustomerBalanceHistory" EntitySet="CustomerBalanceHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_Goods_Inv_StockIn" Association="Ecms_V10Model.Store.FK_Inv_Goods_Inv_StockIn">
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+      <End Role="Inv_Goods" EntitySet="Inv_Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_Goods_Inv_StockOut" Association="Ecms_V10Model.Store.FK_Inv_Goods_Inv_StockOut">
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+      <End Role="Inv_Goods" EntitySet="Inv_Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_Goods_Product" Association="Ecms_V10Model.Store.FK_Inv_Goods_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Inv_Goods" EntitySet="Inv_Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_StockBalance_Product" Association="Ecms_V10Model.Store.FK_Inv_StockBalance_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Inv_StockBalance" EntitySet="Inv_StockBalance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_StockInOut_Customer" Association="Ecms_V10Model.Store.FK_Inv_StockInOut_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_StockInOut_Inv_StockInOutDetail" Association="Ecms_V10Model.Store.FK_Inv_StockInOut_Inv_StockInOutDetail">
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+      <End Role="Inv_StockInOutDetail" EntitySet="Inv_StockInOutDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_StockInOutDetail_Product" Association="Ecms_V10Model.Store.FK_Inv_StockInOutDetail_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Inv_StockInOutDetail" EntitySet="Inv_StockInOutDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Customer" Association="Ecms_V10Model.Store.FK_Invoice_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_CustomerTypeConfigBusiness" Association="Ecms_V10Model.Store.FK_Invoice_CustomerTypeConfigBusiness">
+      <End Role="Mst_Business" EntitySet="Mst_Business" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Order" Association="Ecms_V10Model.Store.FK_Invoice_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceDetail_InvoiceDetail" Association="Ecms_V10Model.Store.FK_InvoiceDetail_InvoiceDetail">
+      <End Role="InvoiceDetail" EntitySet="InvoiceDetail" />
+      <End Role="InvoiceDetail1" EntitySet="InvoiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceDetailId_Invoice" Association="Ecms_V10Model.Store.FK_InvoiceDetailId_Invoice">
+      <End Role="Invoice" EntitySet="Invoice" />
+      <End Role="InvoiceDetail" EntitySet="InvoiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menu_Menu" Association="Ecms_V10Model.Store.FK_Menu_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Menu1" EntitySet="Menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_Comment_News" Association="Ecms_V10Model.Store.FK_News_Comment_News">
+      <End Role="News" EntitySet="News" />
+      <End Role="News_Comment" EntitySet="News_Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_News" Association="Ecms_V10Model.Store.FK_News_News">
+      <End Role="News" EntitySet="News" />
+      <End Role="News1" EntitySet="News" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Customer" Association="Ecms_V10Model.Store.FK_Order_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_OrderType" Association="Ecms_V10Model.Store.FK_Order_OrderType">
+      <End Role="OrderType" EntitySet="OrderType" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Order" Association="Ecms_V10Model.Store.FK_OrderDetail_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Product" Association="Ecms_V10Model.Store.FK_OrderDetail_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_WebsiteLink" Association="Ecms_V10Model.Store.FK_OrderDetail_WebsiteLink">
+      <End Role="WebsiteLink" EntitySet="WebsiteLink" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderHistory_Order" Association="Ecms_V10Model.Store.FK_OrderHistory_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderHistory" EntitySet="OrderHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutbound_Mst_VisaAccount" Association="Ecms_V10Model.Store.FK_OrderOutbound_Mst_VisaAccount">
+      <End Role="Mst_VisaAccount" EntitySet="Mst_VisaAccount" />
+      <End Role="OrderOutbound" EntitySet="OrderOutbound" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutbound_OrderOutbound" Association="Ecms_V10Model.Store.FK_OrderOutbound_OrderOutbound">
+      <End Role="WebsiteAccount" EntitySet="WebsiteAccount" />
+      <End Role="OrderOutbound" EntitySet="OrderOutbound" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutbound_Sys_User" Association="Ecms_V10Model.Store.FK_OrderOutbound_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="OrderOutbound" EntitySet="OrderOutbound" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutboundDetail_OrderDetail" Association="Ecms_V10Model.Store.FK_OrderOutboundDetail_OrderDetail">
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+      <End Role="OrderOutboundDetail" EntitySet="OrderOutboundDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutboundDetail_OrderOutbound" Association="Ecms_V10Model.Store.FK_OrderOutboundDetail_OrderOutbound">
+      <End Role="OrderOutbound" EntitySet="OrderOutbound" />
+      <End Role="OrderOutboundDetail" EntitySet="OrderOutboundDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutboundHistory_OrderOutbound" Association="Ecms_V10Model.Store.FK_OrderOutboundHistory_OrderOutbound">
+      <End Role="OrderOutbound" EntitySet="OrderOutbound" />
+      <End Role="OrderOutboundHistory" EntitySet="OrderOutboundHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Category" Association="Ecms_V10Model.Store.FK_Product_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Vendor" Association="Ecms_V10Model.Store.FK_Product_Vendor">
+      <End Role="Vendor" EntitySet="Vendor" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rpt_DeliverlyConfirmPrint_Customer" Association="Ecms_V10Model.Store.FK_Rpt_DeliverlyConfirmPrint_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Rpt_DeliverlyConfirmPrint" EntitySet="Rpt_DeliverlyConfirmPrint" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rpt_DeliverlyCPDetail_OrderDetail" Association="Ecms_V10Model.Store.FK_Rpt_DeliverlyCPDetail_OrderDetail">
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+      <End Role="Rpt_DeliverlyCPDetail" EntitySet="Rpt_DeliverlyCPDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint" Association="Ecms_V10Model.Store.FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint">
+      <End Role="Rpt_DeliverlyConfirmPrint" EntitySet="Rpt_DeliverlyConfirmPrint" />
+      <End Role="Rpt_DeliverlyCPDetail" EntitySet="Rpt_DeliverlyCPDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapGroupObject_Sys_Group" Association="Ecms_V10Model.Store.FK_Sys_MapGroupObject_Sys_Group">
+      <End Role="Sys_Group" EntitySet="Sys_Group" />
+      <End Role="Sys_MapGroupObject" EntitySet="Sys_MapGroupObject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapGroupObject_Sys_Object" Association="Ecms_V10Model.Store.FK_Sys_MapGroupObject_Sys_Object">
+      <End Role="Sys_Object" EntitySet="Sys_Object" />
+      <End Role="Sys_MapGroupObject" EntitySet="Sys_MapGroupObject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapUserGroup_Sys_Group" Association="Ecms_V10Model.Store.FK_Sys_MapUserGroup_Sys_Group">
+      <End Role="Sys_Group" EntitySet="Sys_Group" />
+      <End Role="Sys_MapUserGroup" EntitySet="Sys_MapUserGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapUserGroup_Sys_User" Association="Ecms_V10Model.Store.FK_Sys_MapUserGroup_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="Sys_MapUserGroup" EntitySet="Sys_MapUserGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Website_Website" Association="Ecms_V10Model.Store.FK_Website_Website">
+      <End Role="WebsiteLink" EntitySet="WebsiteLink" />
+      <End Role="WebsiteLink1" EntitySet="WebsiteLink" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WebsiteAccount_WebsiteLink" Association="Ecms_V10Model.Store.FK_WebsiteAccount_WebsiteLink">
+      <End Role="WebsiteLink" EntitySet="WebsiteLink" />
+      <End Role="WebsiteAccount" EntitySet="WebsiteAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WebsiteAccountVisa_WebsiteAccount" Association="Ecms_V10Model.Store.FK_WebsiteAccountVisa_WebsiteAccount">
+      <End Role="WebsiteAccount" EntitySet="WebsiteAccount" />
+      <End Role="WebsiteAccountVisa" EntitySet="WebsiteAccountVisa" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Director" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUser" Type="varchar" MaxLength="20" />
+    <Property Name="Balance" Type="float" Nullable="false" />
+    <Property Name="BalanceBank" Type="float" />
+  </EntityType>
+  <EntityType Name="ComplaintDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintId" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Content" Type="nvarchar" MaxLength="2000" />
+    <Property Name="UserCreatedId" Type="int" />
+  </EntityType>
+  <EntityType Name="Complaints">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintsNo" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedUser" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CloseUser" Type="int" />
+    <Property Name="ComplaintsDate" Type="datetime" />
+    <Property Name="LastModifyDate" Type="datetime" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContentComplaints" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ReceiverComplaintsId" Type="int" />
+    <Property Name="Status" Type="tinyint" />
+    <Property Name="CloseDate" Type="datetime" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="ConfigBusiness">
+    <Key>
+      <PropertyRef Name="ConfigBusinessId" />
+    </Key>
+    <Property Name="ConfigBusinessId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerTypeId" Type="int" />
+    <Property Name="OrderTypeId" Type="int" />
+    <Property Name="CountryId" Type="int" />
+    <Property Name="BusinessCode" Type="varchar" MaxLength="10" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ConfigValue" Type="float" />
+    <Property Name="WebsiteId" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountryCode" Type="varchar" MaxLength="50" />
+    <Property Name="CountryName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CurrencyCode" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCode" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Balance" Type="float" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="ContactAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="LastDateModify" Type="datetime" />
+    <Property Name="CustomerTypeId" Type="int" />
+    <Property Name="UserCode" Type="varchar" MaxLength="50" />
+    <Property Name="DeliveryName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryMobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerCodeDelivery" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CustomerBalanceHistory">
+    <Key>
+      <PropertyRef Name="CustomerBalanceHistoryId" />
+    </Key>
+    <Property Name="CustomerBalanceHistoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Balance" Type="float" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="InvoiceId" Type="int" />
+    <Property Name="CreatedUserCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CustomerTemp">
+    <Key>
+      <PropertyRef Name="TempId" />
+    </Key>
+    <Property Name="TempId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CustomerType">
+    <Key>
+      <PropertyRef Name="CustomerTypeId" />
+    </Key>
+    <Property Name="CustomerTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerTypeName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Inv_Goods">
+    <Key>
+      <PropertyRef Name="GoodsId" />
+    </Key>
+    <Property Name="GoodsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Serial" Type="nvarchar" MaxLength="50" />
+    <Property Name="StockInId" Type="int" />
+    <Property Name="StockOutId" Type="int" />
+    <Property Name="Status" Type="int" />
+    <Property Name="DateIn" Type="datetime" />
+    <Property Name="DateOut" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Inv_StockBalance">
+    <Key>
+      <PropertyRef Name="StockBalanceId" />
+    </Key>
+    <Property Name="StockBalanceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="ProductId" Type="int" />
+  </EntityType>
+  <EntityType Name="Inv_StockInOut">
+    <Key>
+      <PropertyRef Name="StockInOutId" />
+    </Key>
+    <Property Name="StockInOutId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StockOutNo" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="InOutDate" Type="date" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="Type" Type="tinyint" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="CreatedUser" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="LastDateModify" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Inv_StockInOutDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StockInOutId" Type="int" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="Price" Type="float" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="Serial" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Name="InvoiceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceCode" Type="varchar" MaxLength="50" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="SubCustomerId" Type="int" />
+    <Property Name="OrderId" Type="int" />
+    <Property Name="BusinessCode" Type="varchar" MaxLength="10" />
+    <Property Name="BankId" Type="int" />
+    <Property Name="FromAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="ReplyContent" Type="nvarchar" MaxLength="200" />
+    <Property Name="InvoiceRefId" Type="int" />
+    <Property Name="LastDateModify" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="InvoiceDetail">
+    <Key>
+      <PropertyRef Name="InvoiceDetailId" />
+    </Key>
+    <Property Name="InvoiceDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceId" Type="int" />
+    <Property Name="Amount" Type="float" />
+    <Property Name="OverDueConfigId" Type="int" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuCode" Type="varchar" MaxLength="50" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="Url" Type="nvarchar" MaxLength="200" />
+    <Property Name="ObjectId" Type="int" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Mst_Bank">
+    <Key>
+      <PropertyRef Name="BankId" />
+    </Key>
+    <Property Name="BankId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="200" />
+    <Property Name="BankAddress" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Mst_Business">
+    <Key>
+      <PropertyRef Name="BusinessCode" />
+    </Key>
+    <Property Name="BusinessCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="BusinessName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="DefaultValue" Type="float" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="Mst_SysAuto">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Mst_VisaAccount">
+    <Key>
+      <PropertyRef Name="VisaId" />
+    </Key>
+    <Property Name="VisaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VisaNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="NewsId" />
+    </Key>
+    <Property Name="NewsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" />
+    <Property Name="ShortContent" Type="nvarchar(max)" />
+    <Property Name="NewsContent" Type="nvarchar(max)" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="Published" Type="bit" />
+    <Property Name="NewsImage" Type="nvarchar" MaxLength="200" />
+    <Property Name="Type" Type="int" />
+    <Property Name="WebsiteId" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreateUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AllowDelete" Type="bit" />
+  </EntityType>
+  <EntityType Name="News_Comment">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Name="CommentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="NewsId" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderOutboundNo" Type="varchar" MaxLength="50" />
+    <Property Name="TrackingNo" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="NeedDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="DeliveryName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryMobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliveryAddress" Type="nvarchar" MaxLength="200" />
+    <Property Name="ContactChannel" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderStatus" Type="int" />
+    <Property Name="AmountDeposit" Type="float" />
+    <Property Name="AmountRemain" Type="float" />
+    <Property Name="OrderTypeId" Type="int" />
+    <Property Name="IsInsurance" Type="bit" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="2000" />
+    <Property Name="OrderNoDelivery" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerCodeDelivery" Type="varchar" MaxLength="50" />
+    <Property Name="ConfigRateId" Type="int" />
+    <Property Name="DateToUsa" Type="datetime" />
+    <Property Name="EmployeeCode" Type="varchar" MaxLength="50" />
+    <Property Name="ConfirmDate" Type="datetime" />
+    <Property Name="DayAllowedDelay" Type="int" />
+    <Property Name="CalFeeDelay" Type="varchar" MaxLength="5" />
+    <Property Name="IsCalFeeDelay" Type="varchar" MaxLength="5" />
+    <Property Name="AmountCalFeeDelay" Type="float" />
+    <Property Name="AmountFeeDelay" Type="float" />
+    <Property Name="CalDateFeeDelay" Type="datetime" />
+    <Property Name="FeeDelay" Type="float" />
+    <Property Name="CreateUser" Type="varchar" MaxLength="50" />
+    <Property Name="UserModify" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="OrderDetailId" />
+    </Key>
+    <Property Name="OrderDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="PriceWeb" Type="float" />
+    <Property Name="PriceWebOff" Type="float" />
+    <Property Name="TaxUsaConfigId" Type="int" />
+    <Property Name="InsuaranceConfigId" Type="int" />
+    <Property Name="ShipConfigId" Type="int" />
+    <Property Name="ShipModified" Type="float" />
+    <Property Name="ShipUSAVN" Type="float" />
+    <Property Name="ShipUSA" Type="float" />
+    <Property Name="Surcharge" Type="float" />
+    <Property Name="DeclarePrice" Type="float" />
+    <Property Name="EffortConfigId" Type="int" />
+    <Property Name="EffortModified" Type="float" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ProductLink" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Size" Type="nvarchar" MaxLength="200" />
+    <Property Name="Color" Type="nvarchar" MaxLength="50" />
+    <Property Name="Weight" Type="float" />
+    <Property Name="WebsiteId" Type="int" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="DetailStatus" Type="int" />
+    <Property Name="CountryId" Type="int" />
+    <Property Name="TrackingNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderNoDelivery" Type="varchar" MaxLength="50" />
+    <Property Name="DateToUsa" Type="datetime" />
+    <Property Name="DeliveryStatus" Type="int" />
+    <Property Name="DeliveryVNDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="LotPrice" Type="nvarchar" MaxLength="200" />
+    <Property Name="DetailCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="OrderHistory">
+    <Key>
+      <PropertyRef Name="OrderHistoryId" />
+    </Key>
+    <Property Name="OrderHistoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="OrderId" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="OrderOutbound">
+    <Key>
+      <PropertyRef Name="OrderOutboundId" />
+    </Key>
+    <Property Name="OrderOutboundId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderOutboundNo" Type="varchar" MaxLength="50" />
+    <Property Name="TrackingNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderNumber" Type="varchar" MaxLength="50" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Status" Type="int" />
+    <Property Name="WebsiteAccountId" Type="int" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="2000" />
+    <Property Name="DeliveryVNDate" Type="datetime" />
+    <Property Name="DeliveryUSADate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="WebsiteAccountVisaId" Type="int" />
+    <Property Name="VisaId" Type="int" />
+  </EntityType>
+  <EntityType Name="OrderOutboundDetail">
+    <Key>
+      <PropertyRef Name="OrderOutboundDetailId" />
+    </Key>
+    <Property Name="OrderOutboundDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderOutboundId" Type="int" Nullable="false" />
+    <Property Name="OrderDetailId" Type="int" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="Price" Type="float" />
+  </EntityType>
+  <EntityType Name="OrderOutboundHistory">
+    <Key>
+      <PropertyRef Name="OOHistoryId" />
+    </Key>
+    <Property Name="OOHistoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="OrderOutboundId" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="OrderType">
+    <Key>
+      <PropertyRef Name="OrderTypeId" />
+    </Key>
+    <Property Name="OrderTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderTypeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ProductValue" Type="float" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="Size" Type="nvarchar" MaxLength="200" />
+    <Property Name="Image" Type="nvarchar" MaxLength="200" />
+    <Property Name="Published" Type="bit" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShortDescription" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="VendorId" Type="int" />
+    <Property Name="Orginal" Type="nvarchar" MaxLength="50" />
+    <Property Name="Balance" Type="float" />
+    <Property Name="BestSale" Type="varchar" MaxLength="5" />
+    <Property Name="ProductSaleValue" Type="float" />
+    <Property Name="PPriority" Type="int" />
+    <Property Name="ProductType" Type="varchar" MaxLength="20" />
+    <Property Name="ProductLable" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastDateModify" Type="datetime" />
+    <Property Name="ProductStatus" Type="int" />
+  </EntityType>
+  <EntityType Name="ProductSalePrice">
+    <Key>
+      <PropertyRef Name="SalesPriceId" />
+    </Key>
+    <Property Name="SalesPriceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="Price" Type="float" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="CityId" />
+    </Key>
+    <Property Name="CityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityCode" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Rpt_DeliverlyConfirmPrint">
+    <Key>
+      <PropertyRef Name="RptDeliverlyId" />
+    </Key>
+    <Property Name="RptDeliverlyId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedUser" Type="varchar" MaxLength="50" />
+    <Property Name="DeliverlyFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliverlyPosition" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeliverlyMobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Rpt_DeliverlyCPDetail">
+    <Key>
+      <PropertyRef Name="CPDetailId" />
+    </Key>
+    <Property Name="CPDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RptDeliverlyId" Type="int" />
+    <Property Name="OrderDetailId" Type="int" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Sys_Group">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="GroupCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="GroupName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentGroupCode" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Sys_MapGroupObject">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="ObjectCode" />
+    </Key>
+    <Property Name="GroupCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ObjectCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ObjectType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_MapUserGroup">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="UserCode" />
+    </Key>
+    <Property Name="GroupCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Sys_Object">
+    <Key>
+      <PropertyRef Name="ObjectCode" />
+    </Key>
+    <Property Name="ObjectCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ObjectName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ObjectType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ObjectTemplate" Type="nvarchar" MaxLength="200" />
+    <Property Name="ParentObjectCode" Type="varchar" MaxLength="50" />
+    <Property Name="FlagActive" Type="varchar" MaxLength="5" />
+    <Property Name="OPriority" Type="int" />
+  </EntityType>
+  <EntityType Name="Sys_User">
+    <Key>
+      <PropertyRef Name="UserCode" />
+    </Key>
+    <Property Name="UserCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="FlagActive" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="Position" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="FlagAdmin" Type="varchar" MaxLength="5" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="VendorId" />
+    </Key>
+    <Property Name="VendorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="WebsiteAccount">
+    <Key>
+      <PropertyRef Name="WebsiteAccountId" />
+    </Key>
+    <Property Name="WebsiteAccountId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WebsiteId" Type="int" />
+    <Property Name="AccountWebsiteNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Website" Type="nvarchar" MaxLength="200" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="WebsiteAccountVisa">
+    <Key>
+      <PropertyRef Name="WebsiteAccountVisaId" />
+    </Key>
+    <Property Name="WebsiteAccountVisaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WebsiteAccountId" Type="int" />
+    <Property Name="VisaNo" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="WebsiteLink">
+    <Key>
+      <PropertyRef Name="WebsiteId" />
+    </Key>
+    <Property Name="WebsiteId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WebsiteName" Type="nvarchar" MaxLength="50" />
+    <Property Name="WebLink" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="WebsiteImage" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <Association Name="FK_Category_Category">
+    <End Role="Category" Type="Ecms_V10Model.Store.Category" Multiplicity="0..1" />
+    <End Role="Category1" Type="Ecms_V10Model.Store.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Category1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComplaintDetail_Complaints">
+    <End Role="Complaints" Type="Ecms_V10Model.Store.Complaints" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ComplaintDetail" Type="Ecms_V10Model.Store.ComplaintDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Complaints">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComplaintDetail">
+        <PropertyRef Name="ComplaintId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_ConfigBusiness">
+    <End Role="Mst_Business" Type="Ecms_V10Model.Store.Mst_Business" Multiplicity="0..1" />
+    <End Role="ConfigBusiness" Type="Ecms_V10Model.Store.ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mst_Business">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_Country">
+    <End Role="Country" Type="Ecms_V10Model.Store.Country" Multiplicity="0..1" />
+    <End Role="ConfigBusiness" Type="Ecms_V10Model.Store.ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_CustomerType">
+    <End Role="CustomerType" Type="Ecms_V10Model.Store.CustomerType" Multiplicity="0..1" />
+    <End Role="ConfigBusiness" Type="Ecms_V10Model.Store.ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerType">
+        <PropertyRef Name="CustomerTypeId" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="CustomerTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_OrderType">
+    <End Role="OrderType" Type="Ecms_V10Model.Store.OrderType" Multiplicity="0..1" />
+    <End Role="ConfigBusiness" Type="Ecms_V10Model.Store.ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderType">
+        <PropertyRef Name="OrderTypeId" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="OrderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_CustomerType">
+    <End Role="CustomerType" Type="Ecms_V10Model.Store.CustomerType" Multiplicity="0..1" />
+    <End Role="Customer" Type="Ecms_V10Model.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerType">
+        <PropertyRef Name="CustomerTypeId" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CustomerTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_Sys_User">
+    <End Role="Sys_User" Type="Ecms_V10Model.Store.Sys_User" Multiplicity="0..1" />
+    <End Role="Customer" Type="Ecms_V10Model.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="UserCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerBalanceHistory_Invoice">
+    <End Role="Invoice" Type="Ecms_V10Model.Store.Invoice" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CustomerBalanceHistory" Type="Ecms_V10Model.Store.CustomerBalanceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="CustomerBalanceHistory">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_Goods_Inv_StockIn">
+    <End Role="Inv_StockInOut" Type="Ecms_V10Model.Store.Inv_StockInOut" Multiplicity="0..1" />
+    <End Role="Inv_Goods" Type="Ecms_V10Model.Store.Inv_Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inv_StockInOut">
+        <PropertyRef Name="StockInOutId" />
+      </Principal>
+      <Dependent Role="Inv_Goods">
+        <PropertyRef Name="StockInId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_Goods_Inv_StockOut">
+    <End Role="Inv_StockInOut" Type="Ecms_V10Model.Store.Inv_StockInOut" Multiplicity="0..1" />
+    <End Role="Inv_Goods" Type="Ecms_V10Model.Store.Inv_Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inv_StockInOut">
+        <PropertyRef Name="StockInOutId" />
+      </Principal>
+      <Dependent Role="Inv_Goods">
+        <PropertyRef Name="StockOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_Goods_Product">
+    <End Role="Product" Type="Ecms_V10Model.Store.Product" Multiplicity="0..1" />
+    <End Role="Inv_Goods" Type="Ecms_V10Model.Store.Inv_Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Inv_Goods">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_StockBalance_Product">
+    <End Role="Product" Type="Ecms_V10Model.Store.Product" Multiplicity="0..1" />
+    <End Role="Inv_StockBalance" Type="Ecms_V10Model.Store.Inv_StockBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Inv_StockBalance">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_StockInOut_Customer">
+    <End Role="Customer" Type="Ecms_V10Model.Store.Customer" Multiplicity="0..1" />
+    <End Role="Inv_StockInOut" Type="Ecms_V10Model.Store.Inv_StockInOut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Inv_StockInOut">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_StockInOut_Inv_StockInOutDetail">
+    <End Role="Inv_StockInOut" Type="Ecms_V10Model.Store.Inv_StockInOut" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Inv_StockInOutDetail" Type="Ecms_V10Model.Store.Inv_StockInOutDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inv_StockInOut">
+        <PropertyRef Name="StockInOutId" />
+      </Principal>
+      <Dependent Role="Inv_StockInOutDetail">
+        <PropertyRef Name="StockInOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_StockInOutDetail_Product">
+    <End Role="Product" Type="Ecms_V10Model.Store.Product" Multiplicity="0..1" />
+    <End Role="Inv_StockInOutDetail" Type="Ecms_V10Model.Store.Inv_StockInOutDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Inv_StockInOutDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_Customer">
+    <End Role="Customer" Type="Ecms_V10Model.Store.Customer" Multiplicity="0..1" />
+    <End Role="Invoice" Type="Ecms_V10Model.Store.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_CustomerTypeConfigBusiness">
+    <End Role="Mst_Business" Type="Ecms_V10Model.Store.Mst_Business" Multiplicity="0..1" />
+    <End Role="Invoice" Type="Ecms_V10Model.Store.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mst_Business">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_Order">
+    <End Role="Order" Type="Ecms_V10Model.Store.Order" Multiplicity="0..1" />
+    <End Role="Invoice" Type="Ecms_V10Model.Store.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceDetail_InvoiceDetail">
+    <End Role="InvoiceDetail" Type="Ecms_V10Model.Store.InvoiceDetail" Multiplicity="1" />
+    <End Role="InvoiceDetail1" Type="Ecms_V10Model.Store.InvoiceDetail" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="InvoiceDetail">
+        <PropertyRef Name="InvoiceDetailId" />
+      </Principal>
+      <Dependent Role="InvoiceDetail1">
+        <PropertyRef Name="InvoiceDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceDetailId_Invoice">
+    <End Role="Invoice" Type="Ecms_V10Model.Store.Invoice" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="InvoiceDetail" Type="Ecms_V10Model.Store.InvoiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="InvoiceDetail">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menu_Menu">
+    <End Role="Menu" Type="Ecms_V10Model.Store.Menu" Multiplicity="0..1" />
+    <End Role="Menu1" Type="Ecms_V10Model.Store.Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="Menu1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_Comment_News">
+    <End Role="News" Type="Ecms_V10Model.Store.News" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="News_Comment" Type="Ecms_V10Model.Store.News_Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="NewsId" />
+      </Principal>
+      <Dependent Role="News_Comment">
+        <PropertyRef Name="NewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_News">
+    <End Role="News" Type="Ecms_V10Model.Store.News" Multiplicity="0..1" />
+    <End Role="News1" Type="Ecms_V10Model.Store.News" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="NewsId" />
+      </Principal>
+      <Dependent Role="News1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Customer">
+    <End Role="Customer" Type="Ecms_V10Model.Store.Customer" Multiplicity="0..1" />
+    <End Role="Order" Type="Ecms_V10Model.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_OrderType">
+    <End Role="OrderType" Type="Ecms_V10Model.Store.OrderType" Multiplicity="0..1" />
+    <End Role="Order" Type="Ecms_V10Model.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderType">
+        <PropertyRef Name="OrderTypeId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="OrderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Order">
+    <End Role="Order" Type="Ecms_V10Model.Store.Order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderDetail" Type="Ecms_V10Model.Store.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Product">
+    <End Role="Product" Type="Ecms_V10Model.Store.Product" Multiplicity="0..1" />
+    <End Role="OrderDetail" Type="Ecms_V10Model.Store.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_WebsiteLink">
+    <End Role="WebsiteLink" Type="Ecms_V10Model.Store.WebsiteLink" Multiplicity="0..1" />
+    <End Role="OrderDetail" Type="Ecms_V10Model.Store.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteLink">
+        <PropertyRef Name="WebsiteId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="WebsiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderHistory_Order">
+    <End Role="Order" Type="Ecms_V10Model.Store.Order" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderHistory" Type="Ecms_V10Model.Store.OrderHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderHistory">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutbound_Mst_VisaAccount">
+    <End Role="Mst_VisaAccount" Type="Ecms_V10Model.Store.Mst_VisaAccount" Multiplicity="0..1" />
+    <End Role="OrderOutbound" Type="Ecms_V10Model.Store.OrderOutbound" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mst_VisaAccount">
+        <PropertyRef Name="VisaId" />
+      </Principal>
+      <Dependent Role="OrderOutbound">
+        <PropertyRef Name="VisaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutbound_OrderOutbound">
+    <End Role="WebsiteAccount" Type="Ecms_V10Model.Store.WebsiteAccount" Multiplicity="0..1" />
+    <End Role="OrderOutbound" Type="Ecms_V10Model.Store.OrderOutbound" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteAccount">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Principal>
+      <Dependent Role="OrderOutbound">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutbound_Sys_User">
+    <End Role="Sys_User" Type="Ecms_V10Model.Store.Sys_User" Multiplicity="0..1" />
+    <End Role="OrderOutbound" Type="Ecms_V10Model.Store.OrderOutbound" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="OrderOutbound">
+        <PropertyRef Name="UserCreate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutboundDetail_OrderDetail">
+    <End Role="OrderDetail" Type="Ecms_V10Model.Store.OrderDetail" Multiplicity="0..1" />
+    <End Role="OrderOutboundDetail" Type="Ecms_V10Model.Store.OrderOutboundDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Principal>
+      <Dependent Role="OrderOutboundDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutboundDetail_OrderOutbound">
+    <End Role="OrderOutbound" Type="Ecms_V10Model.Store.OrderOutbound" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderOutboundDetail" Type="Ecms_V10Model.Store.OrderOutboundDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderOutbound">
+        <PropertyRef Name="OrderOutboundId" />
+      </Principal>
+      <Dependent Role="OrderOutboundDetail">
+        <PropertyRef Name="OrderOutboundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutboundHistory_OrderOutbound">
+    <End Role="OrderOutbound" Type="Ecms_V10Model.Store.OrderOutbound" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderOutboundHistory" Type="Ecms_V10Model.Store.OrderOutboundHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderOutbound">
+        <PropertyRef Name="OrderOutboundId" />
+      </Principal>
+      <Dependent Role="OrderOutboundHistory">
+        <PropertyRef Name="OrderOutboundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Category">
+    <End Role="Category" Type="Ecms_V10Model.Store.Category" Multiplicity="0..1" />
+    <End Role="Product" Type="Ecms_V10Model.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Vendor">
+    <End Role="Vendor" Type="Ecms_V10Model.Store.Vendor" Multiplicity="0..1" />
+    <End Role="Product" Type="Ecms_V10Model.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rpt_DeliverlyConfirmPrint_Customer">
+    <End Role="Customer" Type="Ecms_V10Model.Store.Customer" Multiplicity="0..1" />
+    <End Role="Rpt_DeliverlyConfirmPrint" Type="Ecms_V10Model.Store.Rpt_DeliverlyConfirmPrint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Rpt_DeliverlyConfirmPrint">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rpt_DeliverlyCPDetail_OrderDetail">
+    <End Role="OrderDetail" Type="Ecms_V10Model.Store.OrderDetail" Multiplicity="0..1" />
+    <End Role="Rpt_DeliverlyCPDetail" Type="Ecms_V10Model.Store.Rpt_DeliverlyCPDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Principal>
+      <Dependent Role="Rpt_DeliverlyCPDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint">
+    <End Role="Rpt_DeliverlyConfirmPrint" Type="Ecms_V10Model.Store.Rpt_DeliverlyConfirmPrint" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Rpt_DeliverlyCPDetail" Type="Ecms_V10Model.Store.Rpt_DeliverlyCPDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rpt_DeliverlyConfirmPrint">
+        <PropertyRef Name="RptDeliverlyId" />
+      </Principal>
+      <Dependent Role="Rpt_DeliverlyCPDetail">
+        <PropertyRef Name="RptDeliverlyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapGroupObject_Sys_Group">
+    <End Role="Sys_Group" Type="Ecms_V10Model.Store.Sys_Group" Multiplicity="1" />
+    <End Role="Sys_MapGroupObject" Type="Ecms_V10Model.Store.Sys_MapGroupObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Group">
+        <PropertyRef Name="GroupCode" />
+      </Principal>
+      <Dependent Role="Sys_MapGroupObject">
+        <PropertyRef Name="GroupCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapGroupObject_Sys_Object">
+    <End Role="Sys_Object" Type="Ecms_V10Model.Store.Sys_Object" Multiplicity="1" />
+    <End Role="Sys_MapGroupObject" Type="Ecms_V10Model.Store.Sys_MapGroupObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Object">
+        <PropertyRef Name="ObjectCode" />
+      </Principal>
+      <Dependent Role="Sys_MapGroupObject">
+        <PropertyRef Name="ObjectCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapUserGroup_Sys_Group">
+    <End Role="Sys_Group" Type="Ecms_V10Model.Store.Sys_Group" Multiplicity="1" />
+    <End Role="Sys_MapUserGroup" Type="Ecms_V10Model.Store.Sys_MapUserGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Group">
+        <PropertyRef Name="GroupCode" />
+      </Principal>
+      <Dependent Role="Sys_MapUserGroup">
+        <PropertyRef Name="GroupCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapUserGroup_Sys_User">
+    <End Role="Sys_User" Type="Ecms_V10Model.Store.Sys_User" Multiplicity="1" />
+    <End Role="Sys_MapUserGroup" Type="Ecms_V10Model.Store.Sys_MapUserGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="Sys_MapUserGroup">
+        <PropertyRef Name="UserCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Website_Website">
+    <End Role="WebsiteLink" Type="Ecms_V10Model.Store.WebsiteLink" Multiplicity="0..1" />
+    <End Role="WebsiteLink1" Type="Ecms_V10Model.Store.WebsiteLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteLink">
+        <PropertyRef Name="WebsiteId" />
+      </Principal>
+      <Dependent Role="WebsiteLink1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WebsiteAccount_WebsiteLink">
+    <End Role="WebsiteLink" Type="Ecms_V10Model.Store.WebsiteLink" Multiplicity="0..1" />
+    <End Role="WebsiteAccount" Type="Ecms_V10Model.Store.WebsiteAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteLink">
+        <PropertyRef Name="WebsiteId" />
+      </Principal>
+      <Dependent Role="WebsiteAccount">
+        <PropertyRef Name="WebsiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WebsiteAccountVisa_WebsiteAccount">
+    <End Role="WebsiteAccount" Type="Ecms_V10Model.Store.WebsiteAccount" Multiplicity="0..1" />
+    <End Role="WebsiteAccountVisa" Type="Ecms_V10Model.Store.WebsiteAccountVisa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteAccount">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Principal>
+      <Dependent Role="WebsiteAccountVisa">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

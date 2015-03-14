@@ -1,0 +1,21 @@
+﻿requiment:
+- y/c bổ sung thêm phần maketing qua địa chỉ email
+	- cho phép KH đăng ký nhận bản tin qua email
+	- làm chức năng maketing email ở backend
+	- Báo giá gui hàng
+
+plan:
+1. Demo + Test Fontend (24/07/2013)
+1. Demo + Test BackEnd (15/08/2013)
+3. Chạy UAT (17/08/2013)
+
+
+
+===============
+- thiet lap chinh sách
+	- công(theo businesCode)
+	- Thue my(theo businesCode)
+	- giá tri tra cham(theo bussinessCode: addValue)
+	- ti gia quy doi theo xuat xu
+	- phi theo loai khach hang(CustomerType) + chung loai san pham(category)
+=============

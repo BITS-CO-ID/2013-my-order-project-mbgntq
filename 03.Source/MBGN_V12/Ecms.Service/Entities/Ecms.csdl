@@ -1,0 +1,1487 @@
+<Schema Namespace="Ecms_V10Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="EcmsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Ecms_V10Model.Category" />
+    <EntitySet Name="Companies" EntityType="Ecms_V10Model.Company" />
+    <EntitySet Name="ComplaintDetails" EntityType="Ecms_V10Model.ComplaintDetail" />
+    <EntitySet Name="Complaints" EntityType="Ecms_V10Model.Complaint" />
+    <EntitySet Name="CustomerTypes" EntityType="Ecms_V10Model.CustomerType" />
+    <EntitySet Name="OrderTypes" EntityType="Ecms_V10Model.OrderType" />
+    <EntitySet Name="Provinces" EntityType="Ecms_V10Model.Province" />
+    <EntitySet Name="Sys_Group" EntityType="Ecms_V10Model.Sys_Group" />
+    <EntitySet Name="Sys_MapGroupObject" EntityType="Ecms_V10Model.Sys_MapGroupObject" />
+    <EntitySet Name="Sys_MapUserGroup" EntityType="Ecms_V10Model.Sys_MapUserGroup" />
+    <EntitySet Name="Sys_Object" EntityType="Ecms_V10Model.Sys_Object" />
+    <EntitySet Name="Sys_User" EntityType="Ecms_V10Model.Sys_User" />
+    <AssociationSet Name="FK_ComplaintDetail_Complaints" Association="Ecms_V10Model.FK_ComplaintDetail_Complaints">
+      <End Role="Complaints" EntitySet="Complaints" />
+      <End Role="ComplaintDetail" EntitySet="ComplaintDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapGroupObject_Sys_Group" Association="Ecms_V10Model.FK_Sys_MapGroupObject_Sys_Group">
+      <End Role="Sys_Group" EntitySet="Sys_Group" />
+      <End Role="Sys_MapGroupObject" EntitySet="Sys_MapGroupObject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapUserGroup_Sys_Group" Association="Ecms_V10Model.FK_Sys_MapUserGroup_Sys_Group">
+      <End Role="Sys_Group" EntitySet="Sys_Group" />
+      <End Role="Sys_MapUserGroup" EntitySet="Sys_MapUserGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapGroupObject_Sys_Object" Association="Ecms_V10Model.FK_Sys_MapGroupObject_Sys_Object">
+      <End Role="Sys_Object" EntitySet="Sys_Object" />
+      <End Role="Sys_MapGroupObject" EntitySet="Sys_MapGroupObject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_MapUserGroup_Sys_User" Association="Ecms_V10Model.FK_Sys_MapUserGroup_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="Sys_MapUserGroup" EntitySet="Sys_MapUserGroup" />
+    </AssociationSet>
+    <EntitySet Name="Vendors" EntityType="Ecms_V10Model.Vendor" />
+    <EntitySet Name="Customers" EntityType="Ecms_V10Model.Customer" />
+    <AssociationSet Name="FK_Customer_CustomerType" Association="Ecms_V10Model.FK_Customer_CustomerType">
+      <End Role="CustomerType" EntitySet="CustomerTypes" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <EntitySet Name="ProductSalePrices" EntityType="Ecms_V10Model.ProductSalePrice" />
+    <AssociationSet Name="FK_Category_Category" Association="Ecms_V10Model.FK_Category_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Category1" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_Sys_User" Association="Ecms_V10Model.FK_Customer_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <EntitySet Name="Inv_Goods" EntityType="Ecms_V10Model.Inv_Goods" />
+    <EntitySet Name="Mst_Bank" EntityType="Ecms_V10Model.Mst_Bank" />
+    <EntitySet Name="Mst_Business" EntityType="Ecms_V10Model.Mst_Business" />
+    <EntitySet Name="Invoices" EntityType="Ecms_V10Model.Invoice" />
+    <AssociationSet Name="FK_Invoice_Customer" Association="Ecms_V10Model.FK_Invoice_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_CustomerTypeConfigBusiness" Association="Ecms_V10Model.FK_Invoice_CustomerTypeConfigBusiness">
+      <End Role="Mst_Business" EntitySet="Mst_Business" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <EntitySet Name="OrderHistories" EntityType="Ecms_V10Model.OrderHistory" />
+    <EntitySet Name="CustomerTemps" EntityType="Ecms_V10Model.CustomerTemp" />
+    <EntitySet Name="Menus" EntityType="Ecms_V10Model.Menu" />
+    <AssociationSet Name="FK_Menu_Menu" Association="Ecms_V10Model.FK_Menu_Menu">
+      <End Role="Menu" EntitySet="Menus" />
+      <End Role="Menu1" EntitySet="Menus" />
+    </AssociationSet>
+    <EntitySet Name="Countries" EntityType="Ecms_V10Model.Country" />
+    <EntitySet Name="ConfigBusinesses" EntityType="Ecms_V10Model.ConfigBusiness" />
+    <AssociationSet Name="FK_ConfigBusiness_Business" Association="Ecms_V10Model.FK_ConfigBusiness_Business">
+      <End Role="Mst_Business" EntitySet="Mst_Business" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusinesses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_Country" Association="Ecms_V10Model.FK_ConfigBusiness_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusinesses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_CustomerType" Association="Ecms_V10Model.FK_ConfigBusiness_CustomerType">
+      <End Role="CustomerType" EntitySet="CustomerTypes" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusinesses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfigBusiness_OrderType" Association="Ecms_V10Model.FK_ConfigBusiness_OrderType">
+      <End Role="OrderType" EntitySet="OrderTypes" />
+      <End Role="ConfigBusiness" EntitySet="ConfigBusinesses" />
+    </AssociationSet>
+    <EntitySet Name="News" EntityType="Ecms_V10Model.News" />
+    <EntitySet Name="News_Comment" EntityType="Ecms_V10Model.News_Comment" />
+    <AssociationSet Name="FK_News_Comment_News" Association="Ecms_V10Model.FK_News_Comment_News">
+      <End Role="News" EntitySet="News" />
+      <End Role="News_Comment" EntitySet="News_Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_News" Association="Ecms_V10Model.FK_News_News">
+      <End Role="News" EntitySet="News" />
+      <End Role="News1" EntitySet="News" />
+    </AssociationSet>
+    <EntitySet Name="WebsiteLinks" EntityType="Ecms_V10Model.WebsiteLink" />
+    <AssociationSet Name="FK_Website_Website" Association="Ecms_V10Model.FK_Website_Website">
+      <End Role="WebsiteLink" EntitySet="WebsiteLinks" />
+      <End Role="WebsiteLink1" EntitySet="WebsiteLinks" />
+    </AssociationSet>
+    <EntitySet Name="OrderOutboundDetails" EntityType="Ecms_V10Model.OrderOutboundDetail" />
+    <EntitySet Name="Products" EntityType="Ecms_V10Model.Product" />
+    <AssociationSet Name="FK_Product_Category" Association="Ecms_V10Model.FK_Product_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_Goods_Product" Association="Ecms_V10Model.FK_Inv_Goods_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Inv_Goods" EntitySet="Inv_Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Vendor" Association="Ecms_V10Model.FK_Product_Vendor">
+      <End Role="Vendor" EntitySet="Vendors" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <EntitySet Name="InvoiceDetails" EntityType="Ecms_V10Model.InvoiceDetail" />
+    <AssociationSet Name="FK_InvoiceDetailId_Invoice" Association="Ecms_V10Model.FK_InvoiceDetailId_Invoice">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="InvoiceDetail" EntitySet="InvoiceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceDetail_InvoiceDetail" Association="Ecms_V10Model.FK_InvoiceDetail_InvoiceDetail">
+      <End Role="InvoiceDetail" EntitySet="InvoiceDetails" />
+      <End Role="InvoiceDetail1" EntitySet="InvoiceDetails" />
+    </AssociationSet>
+    <EntitySet Name="OrderDetails" EntityType="Ecms_V10Model.OrderDetail" />
+    <AssociationSet Name="FK_OrderDetail_Product" Association="Ecms_V10Model.FK_OrderDetail_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_WebsiteLink" Association="Ecms_V10Model.FK_OrderDetail_WebsiteLink">
+      <End Role="WebsiteLink" EntitySet="WebsiteLinks" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutboundDetail_OrderDetail" Association="Ecms_V10Model.FK_OrderOutboundDetail_OrderDetail">
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+      <End Role="OrderOutboundDetail" EntitySet="OrderOutboundDetails" />
+    </AssociationSet>
+    <EntitySet Name="Orders" EntityType="Ecms_V10Model.Order" />
+    <AssociationSet Name="FK_Order_Customer" Association="Ecms_V10Model.FK_Order_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Order" Association="Ecms_V10Model.FK_Invoice_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_OrderType" Association="Ecms_V10Model.FK_Order_OrderType">
+      <End Role="OrderType" EntitySet="OrderTypes" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Order" Association="Ecms_V10Model.FK_OrderDetail_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderHistory_Order" Association="Ecms_V10Model.FK_OrderHistory_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderHistory" EntitySet="OrderHistories" />
+    </AssociationSet>
+    <EntitySet Name="Inv_StockInOut" EntityType="Ecms_V10Model.Inv_StockInOut" />
+    <AssociationSet Name="FK_Inv_StockInOut_Customer" Association="Ecms_V10Model.FK_Inv_StockInOut_Customer">
+      <End EntitySet="Customers" Role="Customer" />
+      <End EntitySet="Inv_StockInOut" Role="Inv_StockInOut" />
+    </AssociationSet>
+    <EntitySet Name="OrderOutbounds" EntityType="Ecms_V10Model.OrderOutbound" />
+    <AssociationSet Name="FK_OrderOutbound_Sys_User" Association="Ecms_V10Model.FK_OrderOutbound_Sys_User">
+      <End Role="Sys_User" EntitySet="Sys_User" />
+      <End Role="OrderOutbound" EntitySet="OrderOutbounds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderOutboundDetail_OrderOutbound" Association="Ecms_V10Model.FK_OrderOutboundDetail_OrderOutbound">
+      <End Role="OrderOutbound" EntitySet="OrderOutbounds" />
+      <End Role="OrderOutboundDetail" EntitySet="OrderOutboundDetails" />
+    </AssociationSet>
+    <EntitySet Name="CustomerBalanceHistories" EntityType="Ecms_V10Model.CustomerBalanceHistory" />
+    <EntitySet Name="WebsiteAccountVisas" EntityType="Ecms_V10Model.WebsiteAccountVisa" />
+    <EntitySet Name="OrderOutboundHistories" EntityType="Ecms_V10Model.OrderOutboundHistory" />
+    <AssociationSet Name="FK_OrderOutboundHistory_OrderOutbound" Association="Ecms_V10Model.FK_OrderOutboundHistory_OrderOutbound">
+      <End Role="OrderOutbound" EntitySet="OrderOutbounds" />
+      <End Role="OrderOutboundHistory" EntitySet="OrderOutboundHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerBalanceHistory_Invoice" Association="Ecms_V10Model.FK_CustomerBalanceHistory_Invoice">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="CustomerBalanceHistory" EntitySet="CustomerBalanceHistories" />
+    </AssociationSet>
+    <EntitySet Name="Mst_VisaAccount" EntityType="Ecms_V10Model.Mst_VisaAccount" />
+    <AssociationSet Name="FK_OrderOutbound_Mst_VisaAccount" Association="Ecms_V10Model.FK_OrderOutbound_Mst_VisaAccount">
+      <End Role="Mst_VisaAccount" EntitySet="Mst_VisaAccount" />
+      <End Role="OrderOutbound" EntitySet="OrderOutbounds" />
+    </AssociationSet>
+    <EntitySet Name="WebsiteAccounts" EntityType="Ecms_V10Model.WebsiteAccount" />
+    <AssociationSet Name="FK_OrderOutbound_OrderOutbound" Association="Ecms_V10Model.FK_OrderOutbound_OrderOutbound">
+      <End Role="WebsiteAccount" EntitySet="WebsiteAccounts" />
+      <End Role="OrderOutbound" EntitySet="OrderOutbounds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WebsiteAccount_WebsiteLink" Association="Ecms_V10Model.FK_WebsiteAccount_WebsiteLink">
+      <End Role="WebsiteLink" EntitySet="WebsiteLinks" />
+      <End Role="WebsiteAccount" EntitySet="WebsiteAccounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WebsiteAccountVisa_WebsiteAccount" Association="Ecms_V10Model.FK_WebsiteAccountVisa_WebsiteAccount">
+      <End Role="WebsiteAccount" EntitySet="WebsiteAccounts" />
+      <End Role="WebsiteAccountVisa" EntitySet="WebsiteAccountVisas" />
+    </AssociationSet>
+    <EntitySet Name="Mst_SysAuto" EntityType="Ecms_V10Model.Mst_SysAuto" />
+    <EntitySet Name="Rpt_DeliverlyCPDetail" EntityType="Ecms_V10Model.Rpt_DeliverlyCPDetail" />
+    <AssociationSet Name="FK_Rpt_DeliverlyCPDetail_OrderDetail" Association="Ecms_V10Model.FK_Rpt_DeliverlyCPDetail_OrderDetail">
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+      <End Role="Rpt_DeliverlyCPDetail" EntitySet="Rpt_DeliverlyCPDetail" />
+    </AssociationSet>
+    <EntitySet Name="Rpt_DeliverlyConfirmPrint" EntityType="Ecms_V10Model.Rpt_DeliverlyConfirmPrint" />
+    <AssociationSet Name="FK_Rpt_DeliverlyConfirmPrint_Customer" Association="Ecms_V10Model.FK_Rpt_DeliverlyConfirmPrint_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Rpt_DeliverlyConfirmPrint" EntitySet="Rpt_DeliverlyConfirmPrint" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint" Association="Ecms_V10Model.FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint">
+      <End Role="Rpt_DeliverlyConfirmPrint" EntitySet="Rpt_DeliverlyConfirmPrint" />
+      <End Role="Rpt_DeliverlyCPDetail" EntitySet="Rpt_DeliverlyCPDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_Goods_Inv_StockIn" Association="Ecms_V10Model.FK_Inv_Goods_Inv_StockIn">
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+      <End Role="Inv_Goods" EntitySet="Inv_Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_Goods_Inv_StockOut" Association="Ecms_V10Model.FK_Inv_Goods_Inv_StockOut">
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+      <End Role="Inv_Goods" EntitySet="Inv_Goods" />
+    </AssociationSet>
+    <EntitySet Name="Inv_StockBalance" EntityType="Ecms_V10Model.Inv_StockBalance" />
+    <AssociationSet Name="FK_Inv_StockBalance_Product" Association="Ecms_V10Model.FK_Inv_StockBalance_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Inv_StockBalance" EntitySet="Inv_StockBalance" />
+    </AssociationSet>
+    <EntitySet Name="Inv_StockInOutDetail" EntityType="Ecms_V10Model.Inv_StockInOutDetail" />
+    <AssociationSet Name="FK_Inv_StockInOut_Inv_StockInOutDetail" Association="Ecms_V10Model.FK_Inv_StockInOut_Inv_StockInOutDetail">
+      <End Role="Inv_StockInOut" EntitySet="Inv_StockInOut" />
+      <End Role="Inv_StockInOutDetail" EntitySet="Inv_StockInOutDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_StockInOutDetail_Product" Association="Ecms_V10Model.FK_Inv_StockInOutDetail_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Inv_StockInOutDetail" EntitySet="Inv_StockInOutDetail" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Category1" Relationship="Ecms_V10Model.FK_Category_Category" FromRole="Category" ToRole="Category1" />
+    <NavigationProperty Name="Category2" Relationship="Ecms_V10Model.FK_Category_Category" FromRole="Category1" ToRole="Category" />
+    <NavigationProperty Name="Products" Relationship="Ecms_V10Model.FK_Product_Category" FromRole="Category" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Director" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DUser" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Balance" Type="Double" Nullable="false" />
+    <Property Name="BalanceBank" Type="Double" />
+  </EntityType>
+  <EntityType Name="ComplaintDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintId" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="Content" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="UserCreatedId" Type="Int32" />
+    <NavigationProperty Name="Complaint" Relationship="Ecms_V10Model.FK_ComplaintDetail_Complaints" FromRole="ComplaintDetail" ToRole="Complaints" />
+  </EntityType>
+  <EntityType Name="Complaint">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComplaintsNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedUser" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="CloseUser" Type="Int32" />
+    <Property Name="ComplaintsDate" Type="DateTime" />
+    <Property Name="LastModifyDate" Type="DateTime" />
+    <Property Name="Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ContentComplaints" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <Property Name="ReceiverComplaintsId" Type="Int32" />
+    <Property Name="Status" Type="Byte" />
+    <Property Name="CloseDate" Type="DateTime" />
+    <Property Name="Remark" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ComplaintDetails" Relationship="Ecms_V10Model.FK_ComplaintDetail_Complaints" FromRole="Complaints" ToRole="ComplaintDetail" />
+  </EntityType>
+  <EntityType Name="CustomerType">
+    <Key>
+      <PropertyRef Name="CustomerTypeId" />
+    </Key>
+    <Property Name="CustomerTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerTypeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Customers" Relationship="Ecms_V10Model.FK_Customer_CustomerType" FromRole="CustomerType" ToRole="Customer" />
+    <NavigationProperty Name="ConfigBusinesses" Relationship="Ecms_V10Model.FK_ConfigBusiness_CustomerType" FromRole="CustomerType" ToRole="ConfigBusiness" />
+  </EntityType>
+  <EntityType Name="OrderType">
+    <Key>
+      <PropertyRef Name="OrderTypeId" />
+    </Key>
+    <Property Name="OrderTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderTypeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ConfigBusinesses" Relationship="Ecms_V10Model.FK_ConfigBusiness_OrderType" FromRole="OrderType" ToRole="ConfigBusiness" />
+    <NavigationProperty Name="Orders" Relationship="Ecms_V10Model.FK_Order_OrderType" FromRole="OrderType" ToRole="Order" />
+    <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="CityId" />
+    </Key>
+    <Property Name="CityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CityCode" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Sys_Group">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="GroupCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="GroupName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ParentGroupCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Sys_MapGroupObject" Relationship="Ecms_V10Model.FK_Sys_MapGroupObject_Sys_Group" FromRole="Sys_Group" ToRole="Sys_MapGroupObject" />
+    <NavigationProperty Name="Sys_MapUserGroup" Relationship="Ecms_V10Model.FK_Sys_MapUserGroup_Sys_Group" FromRole="Sys_Group" ToRole="Sys_MapUserGroup" />
+  </EntityType>
+  <EntityType Name="Sys_MapGroupObject">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="ObjectCode" />
+    </Key>
+    <Property Name="GroupCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Sys_Group" Relationship="Ecms_V10Model.FK_Sys_MapGroupObject_Sys_Group" FromRole="Sys_MapGroupObject" ToRole="Sys_Group" />
+    <NavigationProperty Name="Sys_Object" Relationship="Ecms_V10Model.FK_Sys_MapGroupObject_Sys_Object" FromRole="Sys_MapGroupObject" ToRole="Sys_Object" />
+  </EntityType>
+  <EntityType Name="Sys_MapUserGroup">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="UserCode" />
+    </Key>
+    <Property Name="GroupCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Sys_Group" Relationship="Ecms_V10Model.FK_Sys_MapUserGroup_Sys_Group" FromRole="Sys_MapUserGroup" ToRole="Sys_Group" />
+    <NavigationProperty Name="Sys_User" Relationship="Ecms_V10Model.FK_Sys_MapUserGroup_Sys_User" FromRole="Sys_MapUserGroup" ToRole="Sys_User" />
+  </EntityType>
+  <EntityType Name="Sys_Object">
+    <Key>
+      <PropertyRef Name="ObjectCode" />
+    </Key>
+    <Property Name="ObjectCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ObjectType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ObjectTemplate" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="ParentObjectCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FlagActive" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Sys_MapGroupObject" Relationship="Ecms_V10Model.FK_Sys_MapGroupObject_Sys_Object" FromRole="Sys_Object" ToRole="Sys_MapGroupObject" />
+    <Property Type="Int32" Name="OPriority" />
+  </EntityType>
+  <EntityType Name="Sys_User">
+    <Key>
+      <PropertyRef Name="UserCode" />
+    </Key>
+    <Property Name="UserCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="FlagActive" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Position" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="FlagAdmin" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Sys_MapUserGroup" Relationship="Ecms_V10Model.FK_Sys_MapUserGroup_Sys_User" FromRole="Sys_User" ToRole="Sys_MapUserGroup" />
+    <NavigationProperty Name="Customers" Relationship="Ecms_V10Model.FK_Customer_Sys_User" FromRole="Sys_User" ToRole="Customer" />
+    <NavigationProperty Name="OrderOutbounds" Relationship="Ecms_V10Model.FK_OrderOutbound_Sys_User" FromRole="Sys_User" ToRole="OrderOutbound" />
+  </EntityType>
+  <Association Name="FK_ComplaintDetail_Complaints">
+    <End Role="Complaints" Type="Ecms_V10Model.Complaint" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ComplaintDetail" Type="Ecms_V10Model.ComplaintDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Complaints">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComplaintDetail">
+        <PropertyRef Name="ComplaintId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapGroupObject_Sys_Group">
+    <End Role="Sys_Group" Type="Ecms_V10Model.Sys_Group" Multiplicity="1" />
+    <End Role="Sys_MapGroupObject" Type="Ecms_V10Model.Sys_MapGroupObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Group">
+        <PropertyRef Name="GroupCode" />
+      </Principal>
+      <Dependent Role="Sys_MapGroupObject">
+        <PropertyRef Name="GroupCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapUserGroup_Sys_Group">
+    <End Role="Sys_Group" Type="Ecms_V10Model.Sys_Group" Multiplicity="1" />
+    <End Role="Sys_MapUserGroup" Type="Ecms_V10Model.Sys_MapUserGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Group">
+        <PropertyRef Name="GroupCode" />
+      </Principal>
+      <Dependent Role="Sys_MapUserGroup">
+        <PropertyRef Name="GroupCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapGroupObject_Sys_Object">
+    <End Role="Sys_Object" Type="Ecms_V10Model.Sys_Object" Multiplicity="1" />
+    <End Role="Sys_MapGroupObject" Type="Ecms_V10Model.Sys_MapGroupObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Object">
+        <PropertyRef Name="ObjectCode" />
+      </Principal>
+      <Dependent Role="Sys_MapGroupObject">
+        <PropertyRef Name="ObjectCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_MapUserGroup_Sys_User">
+    <End Role="Sys_User" Type="Ecms_V10Model.Sys_User" Multiplicity="1" />
+    <End Role="Sys_MapUserGroup" Type="Ecms_V10Model.Sys_MapUserGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="Sys_MapUserGroup">
+        <PropertyRef Name="UserCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="VendorId" />
+    </Key>
+    <Property Type="Int32" Name="VendorId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="VendorName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Ecms_V10Model.FK_Product_Vendor" FromRole="Vendor" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Type="Int32" Name="CustomerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CustomerCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CustomerName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Balance" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="String" Name="Mobile" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CityId" />
+    <Property Type="String" Name="ContactAccount" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="LastDateModify" />
+    <Property Type="Int32" Name="CustomerTypeId" />
+    <Property Type="String" Name="UserCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CustomerType" Relationship="Ecms_V10Model.FK_Customer_CustomerType" FromRole="Customer" ToRole="CustomerType" />
+    <NavigationProperty Name="Sys_User" Relationship="Ecms_V10Model.FK_Customer_Sys_User" FromRole="Customer" ToRole="Sys_User" />
+    <NavigationProperty Name="Invoices" Relationship="Ecms_V10Model.FK_Invoice_Customer" FromRole="Customer" ToRole="Invoice" />
+    <Property Type="String" Name="DeliveryName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliveryMobile" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliveryEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliveryAddress" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomerCodeDelivery" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Orders" Relationship="Ecms_V10Model.FK_Order_Customer" FromRole="Customer" ToRole="Order" />
+    <NavigationProperty Name="Inv_StockInOut" Relationship="Ecms_V10Model.FK_Inv_StockInOut_Customer" FromRole="Customer" ToRole="Inv_StockInOut" />
+    <Property Type="String" Name="EmployeeCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Rpt_DeliverlyConfirmPrint" Relationship="Ecms_V10Model.FK_Rpt_DeliverlyConfirmPrint_Customer" FromRole="Customer" ToRole="Rpt_DeliverlyConfirmPrint" />
+  </EntityType>
+  <Association Name="FK_Customer_CustomerType">
+    <End Type="Ecms_V10Model.CustomerType" Role="CustomerType" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Customer" Role="Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerType">
+        <PropertyRef Name="CustomerTypeId" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CustomerTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ProductSalePrice">
+    <Key>
+      <PropertyRef Name="SalesPriceId" />
+    </Key>
+    <Property Type="Int32" Name="SalesPriceId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="FromDate" />
+    <Property Type="Double" Name="Price" />
+    <Property Type="Int32" Name="ProductId" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Category_Category">
+    <End Type="Ecms_V10Model.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Category" Role="Category1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Category1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_Sys_User">
+    <End Type="Ecms_V10Model.Sys_User" Role="Sys_User" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Customer" Role="Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="UserCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Inv_Goods">
+    <Key>
+      <PropertyRef Name="GoodsId" />
+    </Key>
+    <Property Type="Int32" Name="GoodsId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ProductId" />
+    <Property Type="String" Name="Serial" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="StockInId" />
+    <Property Type="Int32" Name="StockOutId" />
+    <Property Type="Int32" Name="Status" />
+    <NavigationProperty Name="Product" Relationship="Ecms_V10Model.FK_Inv_Goods_Product" FromRole="Inv_Goods" ToRole="Product" />
+    <NavigationProperty Name="Inv_StockInOut" Relationship="Ecms_V10Model.FK_Inv_Goods_Inv_StockIn" FromRole="Inv_Goods" ToRole="Inv_StockInOut" />
+    <NavigationProperty Name="Inv_StockInOut1" Relationship="Ecms_V10Model.FK_Inv_Goods_Inv_StockOut" FromRole="Inv_Goods" ToRole="Inv_StockInOut" />
+    <Property Type="DateTime" Name="DateIn" />
+    <Property Type="DateTime" Name="DateOut" />
+  </EntityType>
+  <EntityType Name="Mst_Bank">
+    <Key>
+      <PropertyRef Name="BankId" />
+    </Key>
+    <Property Type="Int32" Name="BankId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="BankName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BankAddress" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Mst_Business">
+    <Key>
+      <PropertyRef Name="BusinessCode" />
+    </Key>
+    <Property Type="String" Name="BusinessCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BusinessName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="DefaultValue" />
+    <NavigationProperty Name="Invoices" Relationship="Ecms_V10Model.FK_Invoice_CustomerTypeConfigBusiness" FromRole="Mst_Business" ToRole="Invoice" />
+    <Property Type="Int32" Name="Type" />
+    <NavigationProperty Name="ConfigBusinesses" Relationship="Ecms_V10Model.FK_ConfigBusiness_Business" FromRole="Mst_Business" ToRole="ConfigBusiness" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Type="Int32" Name="InvoiceId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InvoiceCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Int32" Name="CustomerId" />
+    <Property Type="Int32" Name="SubCustomerId" />
+    <Property Type="Int32" Name="OrderId" />
+    <Property Type="String" Name="BusinessCode" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="BankId" />
+    <Property Type="String" Name="FromAccount" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customer" Relationship="Ecms_V10Model.FK_Invoice_Customer" FromRole="Invoice" ToRole="Customer" />
+    <NavigationProperty Name="Mst_Business" Relationship="Ecms_V10Model.FK_Invoice_CustomerTypeConfigBusiness" FromRole="Invoice" ToRole="Mst_Business" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="String" Name="ReplyContent" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="InvoiceDetails" Relationship="Ecms_V10Model.FK_InvoiceDetailId_Invoice" FromRole="Invoice" ToRole="InvoiceDetail" />
+    <NavigationProperty Name="Order" Relationship="Ecms_V10Model.FK_Invoice_Order" FromRole="Invoice" ToRole="Order" />
+    <NavigationProperty Name="CustomerBalanceHistories" Relationship="Ecms_V10Model.FK_CustomerBalanceHistory_Invoice" FromRole="Invoice" ToRole="CustomerBalanceHistory" />
+    <Property Type="Int32" Name="InvoiceRefId" />
+    <Property Type="DateTime" Name="LastDateModify" />
+    <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Invoice_Customer">
+    <End Type="Ecms_V10Model.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Invoice" Role="Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_CustomerTypeConfigBusiness">
+    <End Type="Ecms_V10Model.Mst_Business" Role="Mst_Business" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Invoice" Role="Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mst_Business">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrderHistory">
+    <Key>
+      <PropertyRef Name="OrderHistoryId" />
+    </Key>
+    <Property Type="Int32" Name="OrderHistoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Int32" Name="OrderId" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Order" Relationship="Ecms_V10Model.FK_OrderHistory_Order" FromRole="OrderHistory" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="CustomerTemp">
+    <Key>
+      <PropertyRef Name="TempId" />
+    </Key>
+    <Property Type="Int32" Name="TempId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="String" Name="Email" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Type="Int32" Name="MenuId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="MenuCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MenuName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DisplayOrder" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="String" Name="Url" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ObjectId" />
+    <NavigationProperty Name="Menu1" Relationship="Ecms_V10Model.FK_Menu_Menu" FromRole="Menu" ToRole="Menu1" />
+    <NavigationProperty Name="Menu2" Relationship="Ecms_V10Model.FK_Menu_Menu" FromRole="Menu1" ToRole="Menu" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <Association Name="FK_Menu_Menu">
+    <End Type="Ecms_V10Model.Menu" Role="Menu" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Menu" Role="Menu1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="Menu1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Type="Int32" Name="CountryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CountryCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CountryName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ConfigBusinesses" Relationship="Ecms_V10Model.FK_ConfigBusiness_Country" FromRole="Country" ToRole="ConfigBusiness" />
+    <Property Type="String" Name="CurrencyCode" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ConfigBusiness">
+    <Key>
+      <PropertyRef Name="ConfigBusinessId" />
+    </Key>
+    <Property Type="Int32" Name="ConfigBusinessId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomerTypeId" />
+    <Property Type="Int32" Name="OrderTypeId" />
+    <Property Type="Int32" Name="CountryId" />
+    <Property Type="String" Name="BusinessCode" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FromDate" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Double" Name="ConfigValue" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mst_Business" Relationship="Ecms_V10Model.FK_ConfigBusiness_Business" FromRole="ConfigBusiness" ToRole="Mst_Business" />
+    <NavigationProperty Name="Country" Relationship="Ecms_V10Model.FK_ConfigBusiness_Country" FromRole="ConfigBusiness" ToRole="Country" />
+    <NavigationProperty Name="CustomerType" Relationship="Ecms_V10Model.FK_ConfigBusiness_CustomerType" FromRole="ConfigBusiness" ToRole="CustomerType" />
+    <NavigationProperty Name="OrderType" Relationship="Ecms_V10Model.FK_ConfigBusiness_OrderType" FromRole="ConfigBusiness" ToRole="OrderType" />
+    <Property Type="Int32" Name="WebsiteId" />
+    <Property Type="Int32" Name="CategoryId" />
+  </EntityType>
+  <Association Name="FK_ConfigBusiness_Business">
+    <End Type="Ecms_V10Model.Mst_Business" Role="Mst_Business" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.ConfigBusiness" Role="ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mst_Business">
+        <PropertyRef Name="BusinessCode" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="BusinessCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_Country">
+    <End Type="Ecms_V10Model.Country" Role="Country" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.ConfigBusiness" Role="ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_CustomerType">
+    <End Type="Ecms_V10Model.CustomerType" Role="CustomerType" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.ConfigBusiness" Role="ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerType">
+        <PropertyRef Name="CustomerTypeId" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="CustomerTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfigBusiness_OrderType">
+    <End Type="Ecms_V10Model.OrderType" Role="OrderType" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.ConfigBusiness" Role="ConfigBusiness" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderType">
+        <PropertyRef Name="OrderTypeId" />
+      </Principal>
+      <Dependent Role="ConfigBusiness">
+        <PropertyRef Name="OrderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="NewsId" />
+    </Key>
+    <Property Type="Int32" Name="NewsId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShortContent" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NewsContent" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="Boolean" Name="Published" />
+    <Property Type="String" Name="NewsImage" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Type" />
+    <Property Type="Int32" Name="WebsiteId" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="String" Name="CreateUser" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FullName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="AllowDelete" />
+    <NavigationProperty Name="News_Comment" Relationship="Ecms_V10Model.FK_News_Comment_News" FromRole="News" ToRole="News_Comment" />
+    <NavigationProperty Name="News1" Relationship="Ecms_V10Model.FK_News_News" FromRole="News" ToRole="News1" />
+    <NavigationProperty Name="News2" Relationship="Ecms_V10Model.FK_News_News" FromRole="News1" ToRole="News" />
+  </EntityType>
+  <EntityType Name="News_Comment">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Type="Int32" Name="CommentId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="NewsId" />
+    <Property Type="Int32" Name="Status" />
+    <NavigationProperty Name="News" Relationship="Ecms_V10Model.FK_News_Comment_News" FromRole="News_Comment" ToRole="News" />
+  </EntityType>
+  <Association Name="FK_News_Comment_News">
+    <End Type="Ecms_V10Model.News" Role="News" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.News_Comment" Role="News_Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="NewsId" />
+      </Principal>
+      <Dependent Role="News_Comment">
+        <PropertyRef Name="NewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_News">
+    <End Type="Ecms_V10Model.News" Role="News" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.News" Role="News1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="NewsId" />
+      </Principal>
+      <Dependent Role="News1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="WebsiteLink">
+    <Key>
+      <PropertyRef Name="WebsiteId" />
+    </Key>
+    <Property Type="Int32" Name="WebsiteId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="WebsiteName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WebLink" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="String" Name="WebsiteImage" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WebsiteLink1" Relationship="Ecms_V10Model.FK_Website_Website" FromRole="WebsiteLink" ToRole="WebsiteLink1" />
+    <NavigationProperty Name="WebsiteLink2" Relationship="Ecms_V10Model.FK_Website_Website" FromRole="WebsiteLink1" ToRole="WebsiteLink" />
+    <NavigationProperty Name="OrderDetails" Relationship="Ecms_V10Model.FK_OrderDetail_WebsiteLink" FromRole="WebsiteLink" ToRole="OrderDetail" />
+    <NavigationProperty Name="WebsiteAccounts" Relationship="Ecms_V10Model.FK_WebsiteAccount_WebsiteLink" FromRole="WebsiteLink" ToRole="WebsiteAccount" />
+  </EntityType>
+  <Association Name="FK_Website_Website">
+    <End Type="Ecms_V10Model.WebsiteLink" Role="WebsiteLink" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.WebsiteLink" Role="WebsiteLink1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteLink">
+        <PropertyRef Name="WebsiteId" />
+      </Principal>
+      <Dependent Role="WebsiteLink1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrderOutboundDetail">
+    <Key>
+      <PropertyRef Name="OrderOutboundDetailId" />
+    </Key>
+    <Property Type="Int32" Name="OrderOutboundDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrderOutboundId" Nullable="false" />
+    <Property Type="Int32" Name="OrderDetailId" />
+    <Property Type="Double" Name="Quantity" />
+    <Property Type="Double" Name="Price" />
+    <NavigationProperty Name="OrderDetail" Relationship="Ecms_V10Model.FK_OrderOutboundDetail_OrderDetail" FromRole="OrderOutboundDetail" ToRole="OrderDetail" />
+    <NavigationProperty Name="OrderOutbound" Relationship="Ecms_V10Model.FK_OrderOutboundDetail_OrderOutbound" FromRole="OrderOutboundDetail" ToRole="OrderOutbound" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Type="Int32" Name="ProductId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="ProductValue" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="String" Name="Size" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Image" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Published" />
+    <Property Type="String" Name="Tag" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ShortDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="VendorId" />
+    <Property Type="String" Name="Orginal" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Balance" />
+    <NavigationProperty Name="Category" Relationship="Ecms_V10Model.FK_Product_Category" FromRole="Product" ToRole="Category" />
+    <NavigationProperty Name="Inv_Goods" Relationship="Ecms_V10Model.FK_Inv_Goods_Product" FromRole="Product" ToRole="Inv_Goods" />
+    <NavigationProperty Name="Vendor" Relationship="Ecms_V10Model.FK_Product_Vendor" FromRole="Product" ToRole="Vendor" />
+    <NavigationProperty Name="OrderDetails" Relationship="Ecms_V10Model.FK_OrderDetail_Product" FromRole="Product" ToRole="OrderDetail" />
+    <Property Type="String" Name="BestSale" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="ProductSaleValue" />
+    <Property Type="Int32" Name="PPriority" />
+    <Property Type="String" Name="ProductType" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ProductLable" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastDateModify" />
+    <Property Type="Int32" Name="ProductStatus" />
+    <NavigationProperty Name="Inv_StockBalance" Relationship="Ecms_V10Model.FK_Inv_StockBalance_Product" FromRole="Product" ToRole="Inv_StockBalance" />
+    <NavigationProperty Name="Inv_StockInOutDetail" Relationship="Ecms_V10Model.FK_Inv_StockInOutDetail_Product" FromRole="Product" ToRole="Inv_StockInOutDetail" />
+  </EntityType>
+  <Association Name="FK_Product_Category">
+    <End Type="Ecms_V10Model.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_Goods_Product">
+    <End Type="Ecms_V10Model.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Inv_Goods" Role="Inv_Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Inv_Goods">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Vendor">
+    <End Type="Ecms_V10Model.Vendor" Role="Vendor" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="VendorId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="InvoiceDetail">
+    <Key>
+      <PropertyRef Name="InvoiceDetailId" />
+    </Key>
+    <Property Type="Int32" Name="InvoiceDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="InvoiceId" />
+    <Property Type="Double" Name="Amount" />
+    <Property Type="Int32" Name="OverDueConfigId" />
+    <Property Type="Int32" Name="Type" />
+    <NavigationProperty Name="Invoice" Relationship="Ecms_V10Model.FK_InvoiceDetailId_Invoice" FromRole="InvoiceDetail" ToRole="Invoice" />
+    <NavigationProperty Name="InvoiceDetail1" Relationship="Ecms_V10Model.FK_InvoiceDetail_InvoiceDetail" FromRole="InvoiceDetail" ToRole="InvoiceDetail1" />
+    <NavigationProperty Name="InvoiceDetail2" Relationship="Ecms_V10Model.FK_InvoiceDetail_InvoiceDetail" FromRole="InvoiceDetail1" ToRole="InvoiceDetail" />
+  </EntityType>
+  <Association Name="FK_InvoiceDetailId_Invoice">
+    <End Type="Ecms_V10Model.Invoice" Role="Invoice" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.InvoiceDetail" Role="InvoiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="InvoiceDetail">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceDetail_InvoiceDetail">
+    <End Type="Ecms_V10Model.InvoiceDetail" Role="InvoiceDetail" Multiplicity="1" />
+    <End Type="Ecms_V10Model.InvoiceDetail" Role="InvoiceDetail1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="InvoiceDetail">
+        <PropertyRef Name="InvoiceDetailId" />
+      </Principal>
+      <Dependent Role="InvoiceDetail1">
+        <PropertyRef Name="InvoiceDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="OrderDetailId" />
+    </Key>
+    <Property Type="Int32" Name="OrderDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrderId" Nullable="false" />
+    <Property Type="Int32" Name="ProductId" />
+    <Property Type="Double" Name="Quantity" />
+    <Property Type="Double" Name="PriceWeb" />
+    <Property Type="Double" Name="PriceWebOff" />
+    <Property Type="Int32" Name="TaxUsaConfigId" />
+    <Property Type="Int32" Name="ShipConfigId" />
+    <Property Type="Double" Name="ShipUSAVN" />
+    <Property Type="Double" Name="Surcharge" />
+    <Property Type="Int32" Name="EffortConfigId" />
+    <Property Type="String" Name="ImageUrl" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductLink" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Size" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Color" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Weight" />
+    <Property Type="Int32" Name="WebsiteId" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryId" />
+    <Property Type="Int32" Name="DetailStatus" />
+    <Property Type="Int32" Name="CountryId" />
+    <NavigationProperty Name="Product" Relationship="Ecms_V10Model.FK_OrderDetail_Product" FromRole="OrderDetail" ToRole="Product" />
+    <NavigationProperty Name="WebsiteLink" Relationship="Ecms_V10Model.FK_OrderDetail_WebsiteLink" FromRole="OrderDetail" ToRole="WebsiteLink" />
+    <NavigationProperty Name="OrderOutboundDetails" Relationship="Ecms_V10Model.FK_OrderOutboundDetail_OrderDetail" FromRole="OrderDetail" ToRole="OrderOutboundDetail" />
+    <NavigationProperty Name="Order" Relationship="Ecms_V10Model.FK_OrderDetail_Order" FromRole="OrderDetail" ToRole="Order" />
+    <Property Type="String" Name="TrackingNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OrderNoDelivery" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DateToUsa" />
+    <Property Type="Int32" Name="DeliveryStatus" />
+    <Property Type="Double" Name="ShipUSA" />
+    <Property Type="Double" Name="EffortModified" />
+    <Property Type="Int32" Name="InsuaranceConfigId" />
+    <Property Type="Double" Name="DeclarePrice" />
+    <Property Type="Double" Name="ShipModified" />
+    <Property Type="DateTime" Name="DeliveryVNDate" />
+    <Property Type="DateTime" Name="DeliveryDate" />
+    <Property Type="String" Name="LotPrice" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Rpt_DeliverlyCPDetail" Relationship="Ecms_V10Model.FK_Rpt_DeliverlyCPDetail_OrderDetail" FromRole="OrderDetail" ToRole="Rpt_DeliverlyCPDetail" />
+    <Property Type="String" Name="DetailCode" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_OrderDetail_Product">
+    <End Type="Ecms_V10Model.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_WebsiteLink">
+    <End Type="Ecms_V10Model.WebsiteLink" Role="WebsiteLink" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteLink">
+        <PropertyRef Name="WebsiteId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="WebsiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutboundDetail_OrderDetail">
+    <End Type="Ecms_V10Model.OrderDetail" Role="OrderDetail" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderOutboundDetail" Role="OrderOutboundDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Principal>
+      <Dependent Role="OrderOutboundDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Type="Int32" Name="OrderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="OrderNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OrderOutboundNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TrackingNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="OrderDate" />
+    <Property Type="Int32" Name="CustomerId" />
+    <Property Type="DateTime" Name="NeedDate" />
+    <Property Type="DateTime" Name="DeliveryDate" />
+    <Property Type="String" Name="DeliveryName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliveryMobile" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliveryEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliveryAddress" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactChannel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OrderStatus" />
+    <Property Type="Double" Name="AmountDeposit" />
+    <Property Type="Double" Name="AmountRemain" />
+    <Property Type="Int32" Name="OrderTypeId" />
+    <Property Type="Boolean" Name="IsInsurance" />
+    <Property Type="String" Name="Remark" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OrderNoDelivery" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CustomerCodeDelivery" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ConfigRateId" />
+    <NavigationProperty Name="Customer" Relationship="Ecms_V10Model.FK_Order_Customer" FromRole="Order" ToRole="Customer" />
+    <NavigationProperty Name="Invoices" Relationship="Ecms_V10Model.FK_Invoice_Order" FromRole="Order" ToRole="Invoice" />
+    <NavigationProperty Name="OrderType" Relationship="Ecms_V10Model.FK_Order_OrderType" FromRole="Order" ToRole="OrderType" />
+    <NavigationProperty Name="OrderDetails" Relationship="Ecms_V10Model.FK_OrderDetail_Order" FromRole="Order" ToRole="OrderDetail" />
+    <NavigationProperty Name="OrderHistories" Relationship="Ecms_V10Model.FK_OrderHistory_Order" FromRole="Order" ToRole="OrderHistory" />
+    <Property Type="DateTime" Name="DateToUsa" />
+    <Property Type="String" Name="EmployeeCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="ConfirmDate" />
+    <Property Type="Int32" Name="DayAllowedDelay" />
+    <Property Type="String" Name="CalFeeDelay" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="AmountCalFeeDelay" />
+    <Property Type="Double" Name="AmountFeeDelay" />
+    <Property Type="DateTime" Name="CalDateFeeDelay" />
+    <Property Type="Double" Name="FeeDelay" />
+    <Property Type="String" Name="IsCalFeeDelay" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreateUser" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserModify" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Order_Customer">
+    <End Type="Ecms_V10Model.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_Order">
+    <End Type="Ecms_V10Model.Order" Role="Order" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Invoice" Role="Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_OrderType">
+    <End Type="Ecms_V10Model.OrderType" Role="OrderType" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderType">
+        <PropertyRef Name="OrderTypeId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="OrderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Order">
+    <End Type="Ecms_V10Model.Order" Role="Order" Multiplicity="1" />
+    <End Type="Ecms_V10Model.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderHistory_Order">
+    <End Type="Ecms_V10Model.Order" Role="Order" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderHistory" Role="OrderHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderHistory">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Inv_StockInOut">
+    <Key>
+      <PropertyRef Name="StockInOutId" />
+    </Key>
+    <Property Name="StockInOutId" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="StockOutNo" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="InOutDate" Type="DateTime" />
+    <Property Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Type" Type="Byte" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Ecms_V10Model.FK_Inv_StockInOut_Customer" FromRole="Inv_StockInOut" ToRole="Customer" />
+    <Property Name="CreatedUser" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Type="DateTime" Name="LastDateModify" />
+    <NavigationProperty Name="Inv_Goods" Relationship="Ecms_V10Model.FK_Inv_Goods_Inv_StockIn" FromRole="Inv_StockInOut" ToRole="Inv_Goods" />
+    <NavigationProperty Name="Inv_Goods1" Relationship="Ecms_V10Model.FK_Inv_Goods_Inv_StockOut" FromRole="Inv_StockInOut" ToRole="Inv_Goods" />
+    <NavigationProperty Name="Inv_StockInOutDetail" Relationship="Ecms_V10Model.FK_Inv_StockInOut_Inv_StockInOutDetail" FromRole="Inv_StockInOut" ToRole="Inv_StockInOutDetail" />
+  </EntityType>
+  <Association Name="FK_Inv_StockInOut_Customer">
+    <End Type="Ecms_V10Model.Customer" Multiplicity="0..1" Role="Customer" />
+    <End Type="Ecms_V10Model.Inv_StockInOut" Multiplicity="*" Role="Inv_StockInOut" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Inv_StockInOut">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrderOutbound">
+    <Key>
+      <PropertyRef Name="OrderOutboundId" />
+    </Key>
+    <Property Type="Int32" Name="OrderOutboundId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="OrderOutboundNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TrackingNo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OrderNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="OrderDate" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="Int32" Name="WebsiteAccountId" />
+    <Property Type="String" Name="UserCreate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Remark" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sys_User" Relationship="Ecms_V10Model.FK_OrderOutbound_Sys_User" FromRole="OrderOutbound" ToRole="Sys_User" />
+    <NavigationProperty Name="OrderOutboundDetails" Relationship="Ecms_V10Model.FK_OrderOutboundDetail_OrderOutbound" FromRole="OrderOutbound" ToRole="OrderOutboundDetail" />
+    <Property Type="DateTime" Name="DeliveryUSADate" />
+    <Property Type="DateTime" Name="DeliveryVNDate" />
+    <Property Type="DateTime" Name="DeliveryDate" />
+    <Property Type="Int32" Name="WebsiteAccountVisaId" />
+    <NavigationProperty Name="OrderOutboundHistories" Relationship="Ecms_V10Model.FK_OrderOutboundHistory_OrderOutbound" FromRole="OrderOutbound" ToRole="OrderOutboundHistory" />
+    <Property Type="Int32" Name="VisaId" />
+    <NavigationProperty Name="Mst_VisaAccount" Relationship="Ecms_V10Model.FK_OrderOutbound_Mst_VisaAccount" FromRole="OrderOutbound" ToRole="Mst_VisaAccount" />
+    <NavigationProperty Name="WebsiteAccount" Relationship="Ecms_V10Model.FK_OrderOutbound_OrderOutbound" FromRole="OrderOutbound" ToRole="WebsiteAccount" />
+  </EntityType>
+  <Association Name="FK_OrderOutbound_Sys_User">
+    <End Type="Ecms_V10Model.Sys_User" Role="Sys_User" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderOutbound" Role="OrderOutbound" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_User">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="OrderOutbound">
+        <PropertyRef Name="UserCreate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderOutboundDetail_OrderOutbound">
+    <End Type="Ecms_V10Model.OrderOutbound" Role="OrderOutbound" Multiplicity="1" />
+    <End Type="Ecms_V10Model.OrderOutboundDetail" Role="OrderOutboundDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderOutbound">
+        <PropertyRef Name="OrderOutboundId" />
+      </Principal>
+      <Dependent Role="OrderOutboundDetail">
+        <PropertyRef Name="OrderOutboundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CustomerBalanceHistory">
+    <Key>
+      <PropertyRef Name="CustomerBalanceHistoryId" />
+    </Key>
+    <Property Type="Int32" Name="CustomerBalanceHistoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Double" Name="Balance" />
+    <Property Type="Int32" Name="CustomerId" />
+    <Property Type="Int32" Name="InvoiceId" />
+    <Property Type="String" Name="CreatedUserCode" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Invoice" Relationship="Ecms_V10Model.FK_CustomerBalanceHistory_Invoice" FromRole="CustomerBalanceHistory" ToRole="Invoice" />
+  </EntityType>
+  <EntityType Name="WebsiteAccountVisa">
+    <Key>
+      <PropertyRef Name="WebsiteAccountVisaId" />
+    </Key>
+    <Property Type="Int32" Name="WebsiteAccountVisaId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="WebsiteAccountId" />
+    <Property Type="String" Name="VisaNo" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WebsiteAccount" Relationship="Ecms_V10Model.FK_WebsiteAccountVisa_WebsiteAccount" FromRole="WebsiteAccountVisa" ToRole="WebsiteAccount" />
+  </EntityType>
+  <EntityType Name="OrderOutboundHistory">
+    <Key>
+      <PropertyRef Name="OOHistoryId" />
+    </Key>
+    <Property Type="Int32" Name="OOHistoryId" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Int32" Name="OrderOutboundId" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderOutbound" Relationship="Ecms_V10Model.FK_OrderOutboundHistory_OrderOutbound" FromRole="OrderOutboundHistory" ToRole="OrderOutbound" />
+  </EntityType>
+  <Association Name="FK_OrderOutboundHistory_OrderOutbound">
+    <End Type="Ecms_V10Model.OrderOutbound" Role="OrderOutbound" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderOutboundHistory" Role="OrderOutboundHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderOutbound">
+        <PropertyRef Name="OrderOutboundId" />
+      </Principal>
+      <Dependent Role="OrderOutboundHistory">
+        <PropertyRef Name="OrderOutboundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerBalanceHistory_Invoice">
+    <End Type="Ecms_V10Model.Invoice" Role="Invoice" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.CustomerBalanceHistory" Role="CustomerBalanceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="CustomerBalanceHistory">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Mst_VisaAccount">
+    <Key>
+      <PropertyRef Name="VisaId" />
+    </Key>
+    <Property Type="Int32" Name="VisaId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="VisaNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderOutbounds" Relationship="Ecms_V10Model.FK_OrderOutbound_Mst_VisaAccount" FromRole="Mst_VisaAccount" ToRole="OrderOutbound" />
+  </EntityType>
+  <Association Name="FK_OrderOutbound_Mst_VisaAccount">
+    <End Type="Ecms_V10Model.Mst_VisaAccount" Role="Mst_VisaAccount" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderOutbound" Role="OrderOutbound" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mst_VisaAccount">
+        <PropertyRef Name="VisaId" />
+      </Principal>
+      <Dependent Role="OrderOutbound">
+        <PropertyRef Name="VisaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="WebsiteAccount">
+    <Key>
+      <PropertyRef Name="WebsiteAccountId" />
+    </Key>
+    <Property Type="Int32" Name="WebsiteAccountId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="WebsiteId" />
+    <Property Type="String" Name="AccountWebsiteNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Website" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderOutbounds" Relationship="Ecms_V10Model.FK_OrderOutbound_OrderOutbound" FromRole="WebsiteAccount" ToRole="OrderOutbound" />
+    <NavigationProperty Name="WebsiteLink" Relationship="Ecms_V10Model.FK_WebsiteAccount_WebsiteLink" FromRole="WebsiteAccount" ToRole="WebsiteLink" />
+    <NavigationProperty Name="WebsiteAccountVisas" Relationship="Ecms_V10Model.FK_WebsiteAccountVisa_WebsiteAccount" FromRole="WebsiteAccount" ToRole="WebsiteAccountVisa" />
+  </EntityType>
+  <Association Name="FK_OrderOutbound_OrderOutbound">
+    <End Type="Ecms_V10Model.WebsiteAccount" Role="WebsiteAccount" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.OrderOutbound" Role="OrderOutbound" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteAccount">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Principal>
+      <Dependent Role="OrderOutbound">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WebsiteAccount_WebsiteLink">
+    <End Type="Ecms_V10Model.WebsiteLink" Role="WebsiteLink" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.WebsiteAccount" Role="WebsiteAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteLink">
+        <PropertyRef Name="WebsiteId" />
+      </Principal>
+      <Dependent Role="WebsiteAccount">
+        <PropertyRef Name="WebsiteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WebsiteAccountVisa_WebsiteAccount">
+    <End Type="Ecms_V10Model.WebsiteAccount" Role="WebsiteAccount" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.WebsiteAccountVisa" Role="WebsiteAccountVisa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebsiteAccount">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Principal>
+      <Dependent Role="WebsiteAccountVisa">
+        <PropertyRef Name="WebsiteAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Mst_SysAuto">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Type="Int32" Name="AutoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Rpt_DeliverlyCPDetail">
+    <Key>
+      <PropertyRef Name="CPDetailId" />
+    </Key>
+    <Property Type="Int32" Name="CPDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RptDeliverlyId" />
+    <Property Type="Int32" Name="OrderDetailId" />
+    <Property Type="String" Name="Remark" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderDetail" Relationship="Ecms_V10Model.FK_Rpt_DeliverlyCPDetail_OrderDetail" FromRole="Rpt_DeliverlyCPDetail" ToRole="OrderDetail" />
+    <NavigationProperty Name="Rpt_DeliverlyConfirmPrint" Relationship="Ecms_V10Model.FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint" FromRole="Rpt_DeliverlyCPDetail" ToRole="Rpt_DeliverlyConfirmPrint" />
+  </EntityType>
+  <Association Name="FK_Rpt_DeliverlyCPDetail_OrderDetail">
+    <End Type="Ecms_V10Model.OrderDetail" Role="OrderDetail" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Rpt_DeliverlyCPDetail" Role="Rpt_DeliverlyCPDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Principal>
+      <Dependent Role="Rpt_DeliverlyCPDetail">
+        <PropertyRef Name="OrderDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Rpt_DeliverlyConfirmPrint">
+    <Key>
+      <PropertyRef Name="RptDeliverlyId" />
+    </Key>
+    <Property Type="Int32" Name="RptDeliverlyId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomerId" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="String" Name="CreatedUser" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DeliverlyFullName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliverlyPosition" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeliverlyMobile" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customer" Relationship="Ecms_V10Model.FK_Rpt_DeliverlyConfirmPrint_Customer" FromRole="Rpt_DeliverlyConfirmPrint" ToRole="Customer" />
+    <NavigationProperty Name="Rpt_DeliverlyCPDetail" Relationship="Ecms_V10Model.FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint" FromRole="Rpt_DeliverlyConfirmPrint" ToRole="Rpt_DeliverlyCPDetail" />
+  </EntityType>
+  <Association Name="FK_Rpt_DeliverlyConfirmPrint_Customer">
+    <End Type="Ecms_V10Model.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Rpt_DeliverlyConfirmPrint" Role="Rpt_DeliverlyConfirmPrint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Rpt_DeliverlyConfirmPrint">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rpt_DeliverlyCPDetail_Rpt_DeliverlyConfirmPrint">
+    <End Type="Ecms_V10Model.Rpt_DeliverlyConfirmPrint" Role="Rpt_DeliverlyConfirmPrint" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Rpt_DeliverlyCPDetail" Role="Rpt_DeliverlyCPDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rpt_DeliverlyConfirmPrint">
+        <PropertyRef Name="RptDeliverlyId" />
+      </Principal>
+      <Dependent Role="Rpt_DeliverlyCPDetail">
+        <PropertyRef Name="RptDeliverlyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_Goods_Inv_StockIn">
+    <End Type="Ecms_V10Model.Inv_StockInOut" Role="Inv_StockInOut" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Inv_Goods" Role="Inv_Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inv_StockInOut">
+        <PropertyRef Name="StockInOutId" />
+      </Principal>
+      <Dependent Role="Inv_Goods">
+        <PropertyRef Name="StockInId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_Goods_Inv_StockOut">
+    <End Type="Ecms_V10Model.Inv_StockInOut" Role="Inv_StockInOut" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Inv_Goods" Role="Inv_Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inv_StockInOut">
+        <PropertyRef Name="StockInOutId" />
+      </Principal>
+      <Dependent Role="Inv_Goods">
+        <PropertyRef Name="StockOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Inv_StockBalance">
+    <Key>
+      <PropertyRef Name="StockBalanceId" />
+    </Key>
+    <Property Type="Int32" Name="StockBalanceId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Double" Name="Quantity" />
+    <Property Type="Int32" Name="ProductId" />
+    <NavigationProperty Name="Product" Relationship="Ecms_V10Model.FK_Inv_StockBalance_Product" FromRole="Inv_StockBalance" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK_Inv_StockBalance_Product">
+    <End Type="Ecms_V10Model.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Inv_StockBalance" Role="Inv_StockBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Inv_StockBalance">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Inv_StockInOutDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StockInOutId" />
+    <Property Type="Int32" Name="ProductId" />
+    <Property Type="Double" Name="Quantity" />
+    <Property Type="Double" Name="Price" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Serial" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Inv_StockInOut" Relationship="Ecms_V10Model.FK_Inv_StockInOut_Inv_StockInOutDetail" FromRole="Inv_StockInOutDetail" ToRole="Inv_StockInOut" />
+    <NavigationProperty Name="Product" Relationship="Ecms_V10Model.FK_Inv_StockInOutDetail_Product" FromRole="Inv_StockInOutDetail" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK_Inv_StockInOut_Inv_StockInOutDetail">
+    <End Type="Ecms_V10Model.Inv_StockInOut" Role="Inv_StockInOut" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Inv_StockInOutDetail" Role="Inv_StockInOutDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inv_StockInOut">
+        <PropertyRef Name="StockInOutId" />
+      </Principal>
+      <Dependent Role="Inv_StockInOutDetail">
+        <PropertyRef Name="StockInOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_StockInOutDetail_Product">
+    <End Type="Ecms_V10Model.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="Ecms_V10Model.Inv_StockInOutDetail" Role="Inv_StockInOutDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Inv_StockInOutDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

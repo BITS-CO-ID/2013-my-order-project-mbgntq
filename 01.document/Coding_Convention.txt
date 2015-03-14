@@ -1,0 +1,29 @@
+﻿KIẾN TRÚC CHUNG CỦA PROJECT
+
+I. Phần BIZ
+	1. UserBiz => chưa các phần liên quan đến User(Chỉ user)
+	2. Phần common => dự là tất cả các phần liên quan đến dữ liệu master(Dữ liệu kiểu như các danh mục: danh mục đối tượng KH, danh mục tỉnh thành...)
+	3. sẽ tạo thêm các class đặc thù như OrderBiz, TransactionBiz hay InvoiceBiz
+	=> Các class phần BIZ bố trí như vậy
+
+	=> Cơ bản 1 object nó sẽ có các function sau:
+	1. Get => Đặt tên là Object + Get(ví dụ CustomerGet) => hàm lấy thông tin object này
+		=> các hàm lấy thông tin của 1 Object thì mình sẽ dựng model riêng cho nó(với những object cơ bản đủ rồi thì có thể dùng mặc định)
+	2. Create => Đặt tên là Object + Create(ví dụ CustomerCreate)
+	3. Update => Đặt tên là Object + Update(ví dụ CustomerUpdate)
+	4. Delete => Đặt tên là Object + Delete(ví dụ CustomerDelete)
+	=> cơ bản có 4 hàm như vậy, còn tùy tình huống mình sẽ xử lý riêng cho các hàm hoặc viết thêm hàm
+		Ví dụ như hàm tạo customer thì luôn phải tạo User trước => thì nó sẽ xử lý khác đi tý
+	Tiếp theo là Trong các hàm Biz này cũng phân thêm ra mấy bock(region)
+	1. check => validate các dữ liệu....
+	2. build các nghiệp vụ
+	3. return nếu có
+
+I. Phần Website client
+A. Phần DbService: Lớp trung gian thực hiện việc gọi xử lý với phần Biz
+	1. Để gọi Biz thì dựng các lớp tương ứng với Biz, chú ý tên tuổi cũng phải ăn theo.phần class gọi Biz này thực hiện mấy nhiệm vụ
+	2. Phần này sẽ define 1 số tham số đầu vào chung như string để show exception bên biz, usercode xử lý hàm...
+	3. Cũng Có thể tách function ra xử lý các nghiệp vụ ở đây
+	VD: tạo customer xong gửi mail hay viết thêm các hàm check dữ liệu ở đây gọi qua hàm CustomerGet
+B. Code client ở các trang aspx.cs
+	Phần code trong các file aspx.cs => code ghi log cẩn thận, ở các Event bắt buộc phải có TRY ...CATCH

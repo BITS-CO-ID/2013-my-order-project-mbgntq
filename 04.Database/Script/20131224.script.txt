@@ -1,0 +1,9 @@
+alter table dbo.ConfigBusiness add fromQuantity int
+alter table dbo.ConfigBusiness add toQuantity int
+
+alter table orderdetail add RateCountryId int 
+alter table orderdetail add constraint fk_ConfigRateCountryDetail
+foreign key (RateCountryId)
+references dbo.ConfigBusiness(ConfigBusinessId)
+
+7841692

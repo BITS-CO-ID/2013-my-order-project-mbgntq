@@ -1,0 +1,2001 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:323px;
+    height:99px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:323px;
+    height:99px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:319px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:886px;
+    top:9px;
+    width:53px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3 {
+    position:absolute;
+    left:764px;
+    top:72px;
+    width:180px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u4_normal {
+    background-image: url('../MBGN_Master_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:954px;
+    top:0px;
+    width:48px;
+    height:48px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:48px;
+    height:48px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:954px;
+    top:72px;
+    width:48px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u7_normal {
+    background-image: url('../MBGN_Master_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:0px;
+    top:109px;
+    width:1002px;
+    height:39px;
+}
+
+#u7_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1008px;
+    height:45px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:998px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:0px;
+    top:120px;
+    width:63px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:67px;
+    top:120px;
+    width:77px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:143px;
+    top:120px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:196px;
+    top:120px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:259px;
+    top:120px;
+    width:67px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_container {
+    position:absolute;
+    left:1px;
+    top:153px;
+    width:1001px;
+    height:223px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1001px;
+    height:223px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:104px;
+    width:997px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../MBGN_Master_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:0px;
+    top:386px;
+    width:183px;
+    height:39px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:189px;
+    height:45px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:179px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:3px;
+    top:398px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../MBGN_Master_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:-35px;
+    top:1453px;
+    width:1037px;
+    height:194px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1043px;
+    height:200px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:89px;
+    width:1033px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:57px;
+    top:1482px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:304px;
+    top:1482px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:533px;
+    top:1482px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:745px;
+    top:1482px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:874px;
+    top:9px;
+    width:4px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:800px;
+    top:9px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_line {
+    background-image: url('../MBGN_Master_files/u27_line.png');
+}
+
+.u27_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:39px;
+}
+
+.u27 {
+    position:absolute;
+    left:62px;
+    top:109px;
+    width:10px;
+    height:39px;
+    
+}
+
+.u28_line {
+    background-image: url('../MBGN_Master_files/u28_line.png');
+}
+
+.u28_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:39px;
+}
+
+.u28 {
+    position:absolute;
+    left:134px;
+    top:109px;
+    width:10px;
+    height:39px;
+    
+}
+
+.u29_line {
+    background-image: url('../MBGN_Master_files/u29_line.png');
+}
+
+.u29_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:39px;
+}
+
+.u29 {
+    position:absolute;
+    left:188px;
+    top:109px;
+    width:10px;
+    height:39px;
+    
+}
+
+.u30_line {
+    background-image: url('../MBGN_Master_files/u30_line.png');
+}
+
+.u30_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:39px;
+}
+
+.u30 {
+    position:absolute;
+    left:250px;
+    top:108px;
+    width:10px;
+    height:39px;
+    
+}
+
+.u31_menu {
+    background-image: url('../MBGN_Master_files/u31_menu.png');
+}
+
+.u31_menu {
+    position:absolute;
+    left:-3px;
+    top:421px;
+    width:192px;
+    height:75px;
+}
+
+#u31_menu {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:189px;
+    height:72px;
+}
+
+#u32 {
+    position:absolute;
+    left:3px;
+    top:3px;
+    width:182px;
+    height:65px
+}
+
+.u33_normal {
+    background-image: url('../MBGN_Master_files/u33_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:177px;
+    height:20px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:183px;
+    height:26px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:173px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../MBGN_Master_files/u33_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:0px;
+    top:20px;
+    width:177px;
+    height:20px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:183px;
+    height:26px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:173px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../MBGN_Master_files/u33_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:0px;
+    top:40px;
+    width:177px;
+    height:20px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:183px;
+    height:26px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:173px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:202px;
+    top:397px;
+    width:363px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_line {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u41_line.png');
+}
+
+.u41_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:800px;
+    height:3px;
+}
+
+.u41 {
+    position:absolute;
+    left:202px;
+    top:421px;
+    width:800px;
+    height:10px;
+    
+}
+
+#u42 {
+    position:absolute;
+    left:207px;
+    top:467px;
+    width:215px;
+    height:25px
+}
+
+.u43_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u43_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:20px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:26px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u45_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:110px;
+    height:20px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:26px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u47 {
+    position:absolute;
+    left:206px;
+    top:524px;
+    width:636px;
+    height:141px
+}
+
+.u48_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u48_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:30px;
+    height:36px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:36px;
+    height:42px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u50_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:30px;
+    top:0px;
+    width:80px;
+    height:36px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:42px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u52_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:110px;
+    top:0px;
+    width:98px;
+    height:36px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:42px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u54_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:208px;
+    top:0px;
+    width:59px;
+    height:36px;
+}
+
+#u54_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:65px;
+    height:42px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:55px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u56_normal.png');
+}
+
+.u56_container {
+    position:absolute;
+    left:267px;
+    top:0px;
+    width:50px;
+    height:36px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:42px;
+}
+
+.u57 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u56_normal.png');
+}
+
+.u58_container {
+    position:absolute;
+    left:316px;
+    top:0px;
+    width:50px;
+    height:36px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:42px;
+}
+
+.u59 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u60_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u56_normal.png');
+}
+
+.u60_container {
+    position:absolute;
+    left:366px;
+    top:0px;
+    width:50px;
+    height:36px;
+}
+
+#u60_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:42px;
+}
+
+.u61 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u56_normal.png');
+}
+
+.u62_container {
+    position:absolute;
+    left:416px;
+    top:0px;
+    width:50px;
+    height:36px;
+}
+
+#u62_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:42px;
+}
+
+.u63 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u56_normal.png');
+}
+
+.u64_container {
+    position:absolute;
+    left:466px;
+    top:0px;
+    width:50px;
+    height:36px;
+}
+
+#u64_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:42px;
+}
+
+.u65 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u66_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u66_normal.png');
+}
+
+.u66_container {
+    position:absolute;
+    left:516px;
+    top:0px;
+    width:57px;
+    height:36px;
+}
+
+#u66_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:63px;
+    height:42px;
+}
+
+.u67 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:53px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u68_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u68_normal.png');
+}
+
+.u68_container {
+    position:absolute;
+    left:573px;
+    top:0px;
+    width:58px;
+    height:36px;
+}
+
+#u68_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:42px;
+}
+
+.u69 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u70_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u70_normal.png');
+}
+
+.u70_container {
+    position:absolute;
+    left:0px;
+    top:36px;
+    width:30px;
+    height:50px;
+}
+
+#u70_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:36px;
+    height:56px;
+}
+
+.u71 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u72_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u72_normal.png');
+}
+
+.u72_container {
+    position:absolute;
+    left:30px;
+    top:36px;
+    width:80px;
+    height:50px;
+}
+
+#u72_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:56px;
+}
+
+.u73 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u74_normal.png');
+}
+
+.u74_container {
+    position:absolute;
+    left:110px;
+    top:36px;
+    width:98px;
+    height:50px;
+}
+
+#u74_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:56px;
+}
+
+.u75 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u76_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u76_normal.png');
+}
+
+.u76_container {
+    position:absolute;
+    left:208px;
+    top:36px;
+    width:59px;
+    height:50px;
+}
+
+#u76_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:65px;
+    height:56px;
+}
+
+.u77 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:55px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:267px;
+    top:36px;
+    width:50px;
+    height:50px;
+}
+
+#u78_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:316px;
+    top:36px;
+    width:50px;
+    height:50px;
+}
+
+#u80_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u82_container {
+    position:absolute;
+    left:366px;
+    top:36px;
+    width:50px;
+    height:50px;
+}
+
+#u82_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u83 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u84_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u84_container {
+    position:absolute;
+    left:416px;
+    top:36px;
+    width:50px;
+    height:50px;
+}
+
+#u84_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u85 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:466px;
+    top:36px;
+    width:50px;
+    height:50px;
+}
+
+#u86_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u88_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u88_normal.png');
+}
+
+.u88_container {
+    position:absolute;
+    left:516px;
+    top:36px;
+    width:57px;
+    height:50px;
+}
+
+#u88_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:63px;
+    height:56px;
+}
+
+.u89 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:53px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u90_normal.png');
+}
+
+.u90_container {
+    position:absolute;
+    left:573px;
+    top:36px;
+    width:58px;
+    height:50px;
+}
+
+#u90_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:56px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u70_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:0px;
+    top:86px;
+    width:30px;
+    height:50px;
+}
+
+#u92_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:36px;
+    height:56px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u72_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:30px;
+    top:86px;
+    width:80px;
+    height:50px;
+}
+
+#u94_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:56px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u74_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:110px;
+    top:86px;
+    width:98px;
+    height:50px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:56px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u76_normal.png');
+}
+
+.u98_container {
+    position:absolute;
+    left:208px;
+    top:86px;
+    width:59px;
+    height:50px;
+}
+
+#u98_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:65px;
+    height:56px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:55px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:267px;
+    top:86px;
+    width:50px;
+    height:50px;
+}
+
+#u100_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:316px;
+    top:86px;
+    width:50px;
+    height:50px;
+}
+
+#u102_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:366px;
+    top:86px;
+    width:50px;
+    height:50px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:416px;
+    top:86px;
+    width:50px;
+    height:50px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u78_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:466px;
+    top:86px;
+    width:50px;
+    height:50px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:56px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u88_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:516px;
+    top:86px;
+    width:57px;
+    height:50px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:63px;
+    height:56px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:53px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u90_normal.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:573px;
+    top:86px;
+    width:58px;
+    height:50px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:56px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114 {
+    position:absolute;
+    left:691px;
+    top:749px;
+    width:148px;
+    height:39px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u115 {
+    position:absolute;
+    left:610px;
+    top:690px;
+    width:90px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u116 {
+    position:absolute;
+    left:710px;
+    top:688px;
+    width:115px;
+    height:26px
+}
+
+.u117_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u117_normal.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:110px;
+    height:21px;
+}
+
+#u117_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:27px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119_normal {
+    background-image: url('../Chi_ti_t___n_hang_bao_gia_files/u119_normal.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:202px;
+    top:843px;
+    width:549px;
+    height:80px;
+}
+
+#u119_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:555px;
+    height:86px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:545px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

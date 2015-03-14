@@ -1,0 +1,257 @@
+﻿
+body
+{
+    font: 13px/20px Helvetica, Arial, sans-serif;
+    color: #014586;
+    line-height: 20px;
+    margin-top: 0;
+    padding: 0;
+}
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+table .searchForm
+{
+    border-spacing: 8px;
+    border-collapse: seperate;
+}
+
+#wrapAll
+{
+    margin: auto;
+}
+
+#header
+{
+    background-color: #4A6F49;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 50px;
+    width: 100%;
+    margin-left: 0x;
+    padding: 0px 0 0 0px;
+}
+
+.header-logo
+{
+    float: left;
+    width: 50px;
+}
+
+#contentMain
+{
+    float: left;
+    margin-left: 0;
+    width: 100%;
+}
+
+#navigation {
+  background-color: white;
+  border-bottom: 0 solid #4A6F49;
+  border-bottom-right-radius: 5px;
+  border-right: 0 solid #4A6F49;
+  margin: 6px 0 10px 1px;
+  padding: 0 0 5px 5px;
+  position: absolute;
+  width: 17%;  
+}
+
+#rightContent {
+  border: 1px solid #4A6F49;
+  box-shadow: 2px 1px 3px 2px #888888;
+  float: left;
+  margin: 5px 0 0;
+  padding: 5px 5px 5px 6px;
+  width: 99%;
+}
+
+
+#rightContent .right-content-main
+{
+    margin: 20px 0 10px;
+}
+
+#rightContent h3 {
+  background: url("../images/bgtabright.jpg") repeat scroll 0 0 transparent;
+  border-left: 5px solid #0071BC;
+  box-shadow: 2px 1px 3px 2px #888888;
+  color: #0071BC;
+  float: right;
+  font-family: menu;
+  font-size: 12px;
+  margin: -5px -5px 0 0;
+  padding: 5px 0 5px 10px;
+  text-transform: uppercase;
+  width: 250px;
+}
+
+#footer
+{
+    background-color: #4A6F49;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: left;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+.infoUser
+{
+    color: #FFFFFF;
+    float: right;
+    font-family: menu;
+    font-weight: bold;
+    margin: 0 50px 0 0;
+    padding-top: 10px;
+}
+
+.infoUser > a:link, .infoUser > a:active, .infoUser > a:visited
+{
+    color: #FFFFFF;
+}
+
+.infoUser > a:hover
+{
+    color: #FFFFA9;
+    text-decoration: none;
+}
+
+.accountName:link, .accountName:active, .accountName:visited
+{
+    color: #FFFFA9;
+    text-decoration: none;
+}
+
+.accountName:hover
+{
+    color: #FFFFFF;
+}
+
+#navigation ul
+{
+    list-style-image: url("../Images/arow-black.png");
+    list-style-type: none;
+    margin: 10px 0 15px -15px;
+}
+
+#navigation a:link, #navigation a:active, #navigation a:visited
+{
+    color: #014586;
+    font-family: caption;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+#navigation a:hover
+{
+    color: mediumseagreen;
+}
+
+#navigation h3 {
+  background: url("../images/bgtabright.jpg") repeat scroll 0 0 transparent;
+  border-left: 5px solid #0071BC;
+  box-shadow: 2px 1px 3px 2px #888888;
+  color: #0071BC;
+  cursor: pointer;
+  font-family: menu;
+  font-size: 12px;
+  margin: 1px 0 0 -5px;
+  padding: 5px 0 5px 10px;
+  text-transform: uppercase;
+}
+
+.tdFirst
+{
+    width: 170px;
+}
+
+.error
+{
+    color: Red;
+}
+
+.toggleMenu {
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+
+/* for poup */
+.ModalPopupBG
+{
+	background-color: #666699;
+	filter: alpha(opacity=50);
+	opacity: 0.7;
+}
+
+.popup_Container {
+	background-color:#fffeb2;
+	border:2px solid #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+.popupConfirmation
+{
+	width: 300px;
+	height: 200px;
+}
+
+.popup_Titlebar {
+	background: url(../images/titlebar_bg.jpg);
+	height: 29px;
+}
+
+.popup_Body
+{
+	padding:15px 15px 15px 15px;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:12px;
+	color:#000000;
+	line-height:15pt;
+	clear:both;
+	padding:20px;
+}
+
+.TitlebarLeft 
+{
+	float:left;
+	padding-left:5px;
+	padding-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	color:#FFFFFF;
+}
+.TitlebarRight 
+{
+	background:url(../images/cross_icon_normal.png);
+	background-position:right;
+	background-repeat:no-repeat;
+	height:15px;
+	width:16px;
+	float:right;
+	cursor:pointer;
+	margin-right:5px;
+	margin-top:5px;
+}
+
+.popup_Buttons
+{
+	margin:20px;
+}
+
+/* for poup */

@@ -1,0 +1,619 @@
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ecms_V10ModelStoreContainer" CdmEntityContainer="EcmsEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
+          <ScalarProperty Name="DUser" ColumnName="DUser" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="BalanceBank" ColumnName="BalanceBank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComplaintDetails">
+      <EntityTypeMapping TypeName="Ecms_V10Model.ComplaintDetail">
+        <MappingFragment StoreEntitySet="ComplaintDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComplaintId" ColumnName="ComplaintId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="UserCreatedId" ColumnName="UserCreatedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Complaints">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Complaint">
+        <MappingFragment StoreEntitySet="Complaints">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComplaintsNo" ColumnName="ComplaintsNo" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CloseUser" ColumnName="CloseUser" />
+          <ScalarProperty Name="ComplaintsDate" ColumnName="ComplaintsDate" />
+          <ScalarProperty Name="LastModifyDate" ColumnName="LastModifyDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ContentComplaints" ColumnName="ContentComplaints" />
+          <ScalarProperty Name="ReceiverComplaintsId" ColumnName="ReceiverComplaintsId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerTypes">
+      <EntityTypeMapping TypeName="Ecms_V10Model.CustomerType">
+        <MappingFragment StoreEntitySet="CustomerType">
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="CustomerTypeName" ColumnName="CustomerTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTypes">
+      <EntityTypeMapping TypeName="Ecms_V10Model.OrderType">
+        <MappingFragment StoreEntitySet="OrderType">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderTypeId" ColumnName="OrderTypeId" />
+          <ScalarProperty Name="OrderTypeName" ColumnName="OrderTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Group">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Sys_Group">
+        <MappingFragment StoreEntitySet="Sys_Group">
+          <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="ParentGroupCode" ColumnName="ParentGroupCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_MapGroupObject">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Sys_MapGroupObject">
+        <MappingFragment StoreEntitySet="Sys_MapGroupObject">
+          <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+          <ScalarProperty Name="ObjectCode" ColumnName="ObjectCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_MapUserGroup">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Sys_MapUserGroup">
+        <MappingFragment StoreEntitySet="Sys_MapUserGroup">
+          <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Object">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Sys_Object">
+        <MappingFragment StoreEntitySet="Sys_Object">
+          <ScalarProperty Name="OPriority" ColumnName="OPriority" />
+          <ScalarProperty Name="ObjectCode" ColumnName="ObjectCode" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectTemplate" ColumnName="ObjectTemplate" />
+          <ScalarProperty Name="ParentObjectCode" ColumnName="ParentObjectCode" />
+          <ScalarProperty Name="FlagActive" ColumnName="FlagActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_User">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Sys_User">
+        <MappingFragment StoreEntitySet="Sys_User">
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="FlagActive" ColumnName="FlagActive" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="FlagAdmin" ColumnName="FlagAdmin" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Vendor">
+        <MappingFragment StoreEntitySet="Vendor">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+          <ScalarProperty Name="CustomerCodeDelivery" ColumnName="CustomerCodeDelivery" />
+          <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+          <ScalarProperty Name="DeliveryEmail" ColumnName="DeliveryEmail" />
+          <ScalarProperty Name="DeliveryMobile" ColumnName="DeliveryMobile" />
+          <ScalarProperty Name="DeliveryName" ColumnName="DeliveryName" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="LastDateModify" ColumnName="LastDateModify" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ContactAccount" ColumnName="ContactAccount" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSalePrices">
+      <EntityTypeMapping TypeName="Ecms_V10Model.ProductSalePrice">
+        <MappingFragment StoreEntitySet="ProductSalePrice">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="SalesPriceId" ColumnName="SalesPriceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inv_Goods">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Inv_Goods">
+        <MappingFragment StoreEntitySet="Inv_Goods">
+          <ScalarProperty Name="DateOut" ColumnName="DateOut" />
+          <ScalarProperty Name="DateIn" ColumnName="DateIn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StockOutId" ColumnName="StockOutId" />
+          <ScalarProperty Name="StockInId" ColumnName="StockInId" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="GoodsId" ColumnName="GoodsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mst_Bank">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Mst_Bank">
+        <MappingFragment StoreEntitySet="Mst_Bank">
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mst_Business">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Mst_Business">
+        <MappingFragment StoreEntitySet="Mst_Business">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BusinessName" ColumnName="BusinessName" />
+          <ScalarProperty Name="BusinessCode" ColumnName="BusinessCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LastDateModify" ColumnName="LastDateModify" />
+          <ScalarProperty Name="InvoiceRefId" ColumnName="InvoiceRefId" />
+          <ScalarProperty Name="ReplyContent" ColumnName="ReplyContent" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="FromAccount" ColumnName="FromAccount" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="BusinessCode" ColumnName="BusinessCode" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="SubCustomerId" ColumnName="SubCustomerId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceCode" ColumnName="InvoiceCode" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderHistories">
+      <EntityTypeMapping TypeName="Ecms_V10Model.OrderHistory">
+        <MappingFragment StoreEntitySet="OrderHistory">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="OrderHistoryId" ColumnName="OrderHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerTemps">
+      <EntityTypeMapping TypeName="Ecms_V10Model.CustomerTemp">
+        <MappingFragment StoreEntitySet="CustomerTemp">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="TempId" ColumnName="TempId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MenuCode" ColumnName="MenuCode" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfigBusinesses">
+      <EntityTypeMapping TypeName="Ecms_V10Model.ConfigBusiness">
+        <MappingFragment StoreEntitySet="ConfigBusiness">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="BusinessCode" ColumnName="BusinessCode" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="OrderTypeId" ColumnName="OrderTypeId" />
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="ConfigBusinessId" ColumnName="ConfigBusinessId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="Ecms_V10Model.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="AllowDelete" ColumnName="AllowDelete" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="NewsImage" ColumnName="NewsImage" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="NewsContent" ColumnName="NewsContent" />
+          <ScalarProperty Name="ShortContent" ColumnName="ShortContent" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="NewsId" ColumnName="NewsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_Comment">
+      <EntityTypeMapping TypeName="Ecms_V10Model.News_Comment">
+        <MappingFragment StoreEntitySet="News_Comment">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NewsId" ColumnName="NewsId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CommentId" ColumnName="CommentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebsiteLinks">
+      <EntityTypeMapping TypeName="Ecms_V10Model.WebsiteLink">
+        <MappingFragment StoreEntitySet="WebsiteLink">
+          <ScalarProperty Name="WebsiteImage" ColumnName="WebsiteImage" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="WebLink" ColumnName="WebLink" />
+          <ScalarProperty Name="WebsiteName" ColumnName="WebsiteName" />
+          <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderOutboundDetails">
+      <EntityTypeMapping TypeName="Ecms_V10Model.OrderOutboundDetail">
+        <MappingFragment StoreEntitySet="OrderOutboundDetail">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+          <ScalarProperty Name="OrderOutboundId" ColumnName="OrderOutboundId" />
+          <ScalarProperty Name="OrderOutboundDetailId" ColumnName="OrderOutboundDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductStatus" ColumnName="ProductStatus" />
+          <ScalarProperty Name="LastDateModify" ColumnName="LastDateModify" />
+          <ScalarProperty Name="ProductLable" ColumnName="ProductLable" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="PPriority" ColumnName="PPriority" />
+          <ScalarProperty Name="ProductSaleValue" ColumnName="ProductSaleValue" />
+          <ScalarProperty Name="BestSale" ColumnName="BestSale" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Orginal" ColumnName="Orginal" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="ProductValue" ColumnName="ProductValue" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceDetails">
+      <EntityTypeMapping TypeName="Ecms_V10Model.InvoiceDetail">
+        <MappingFragment StoreEntitySet="InvoiceDetail">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="OverDueConfigId" ColumnName="OverDueConfigId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="InvoiceDetailId" ColumnName="InvoiceDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="Ecms_V10Model.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="DetailCode" ColumnName="DetailCode" />
+          <ScalarProperty Name="LotPrice" ColumnName="LotPrice" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="DeliveryVNDate" ColumnName="DeliveryVNDate" />
+          <ScalarProperty Name="ShipModified" ColumnName="ShipModified" />
+          <ScalarProperty Name="DeclarePrice" ColumnName="DeclarePrice" />
+          <ScalarProperty Name="InsuaranceConfigId" ColumnName="InsuaranceConfigId" />
+          <ScalarProperty Name="EffortModified" ColumnName="EffortModified" />
+          <ScalarProperty Name="ShipUSA" ColumnName="ShipUSA" />
+          <ScalarProperty Name="DeliveryStatus" ColumnName="DeliveryStatus" />
+          <ScalarProperty Name="DateToUsa" ColumnName="DateToUsa" />
+          <ScalarProperty Name="OrderNoDelivery" ColumnName="OrderNoDelivery" />
+          <ScalarProperty Name="TrackingNo" ColumnName="TrackingNo" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="DetailStatus" ColumnName="DetailStatus" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ProductLink" ColumnName="ProductLink" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="EffortConfigId" ColumnName="EffortConfigId" />
+          <ScalarProperty Name="Surcharge" ColumnName="Surcharge" />
+          <ScalarProperty Name="ShipUSAVN" ColumnName="ShipUSAVN" />
+          <ScalarProperty Name="ShipConfigId" ColumnName="ShipConfigId" />
+          <ScalarProperty Name="TaxUsaConfigId" ColumnName="TaxUsaConfigId" />
+          <ScalarProperty Name="PriceWebOff" ColumnName="PriceWebOff" />
+          <ScalarProperty Name="PriceWeb" ColumnName="PriceWeb" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="UserModify" ColumnName="UserModify" />
+          <ScalarProperty Name="CreateUser" ColumnName="CreateUser" />
+          <ScalarProperty Name="IsCalFeeDelay" ColumnName="IsCalFeeDelay" />
+          <ScalarProperty Name="FeeDelay" ColumnName="FeeDelay" />
+          <ScalarProperty Name="CalDateFeeDelay" ColumnName="CalDateFeeDelay" />
+          <ScalarProperty Name="AmountFeeDelay" ColumnName="AmountFeeDelay" />
+          <ScalarProperty Name="AmountCalFeeDelay" ColumnName="AmountCalFeeDelay" />
+          <ScalarProperty Name="CalFeeDelay" ColumnName="CalFeeDelay" />
+          <ScalarProperty Name="DayAllowedDelay" ColumnName="DayAllowedDelay" />
+          <ScalarProperty Name="ConfirmDate" ColumnName="ConfirmDate" />
+          <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+          <ScalarProperty Name="DateToUsa" ColumnName="DateToUsa" />
+          <ScalarProperty Name="ConfigRateId" ColumnName="ConfigRateId" />
+          <ScalarProperty Name="CustomerCodeDelivery" ColumnName="CustomerCodeDelivery" />
+          <ScalarProperty Name="OrderNoDelivery" ColumnName="OrderNoDelivery" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="IsInsurance" ColumnName="IsInsurance" />
+          <ScalarProperty Name="OrderTypeId" ColumnName="OrderTypeId" />
+          <ScalarProperty Name="AmountRemain" ColumnName="AmountRemain" />
+          <ScalarProperty Name="AmountDeposit" ColumnName="AmountDeposit" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="ContactChannel" ColumnName="ContactChannel" />
+          <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+          <ScalarProperty Name="DeliveryEmail" ColumnName="DeliveryEmail" />
+          <ScalarProperty Name="DeliveryMobile" ColumnName="DeliveryMobile" />
+          <ScalarProperty Name="DeliveryName" ColumnName="DeliveryName" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="NeedDate" ColumnName="NeedDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="TrackingNo" ColumnName="TrackingNo" />
+          <ScalarProperty Name="OrderOutboundNo" ColumnName="OrderOutboundNo" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inv_StockInOut">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Inv_StockInOut">
+        <MappingFragment StoreEntitySet="Inv_StockInOut">
+          <ScalarProperty Name="LastDateModify" ColumnName="LastDateModify" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="InOutDate" ColumnName="InOutDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="StockOutNo" ColumnName="StockOutNo" />
+          <ScalarProperty Name="StockInOutId" ColumnName="StockInOutId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderOutbounds">
+      <EntityTypeMapping TypeName="Ecms_V10Model.OrderOutbound">
+        <MappingFragment StoreEntitySet="OrderOutbound">
+          <ScalarProperty Name="VisaId" ColumnName="VisaId" />
+          <ScalarProperty Name="WebsiteAccountVisaId" ColumnName="WebsiteAccountVisaId" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="DeliveryVNDate" ColumnName="DeliveryVNDate" />
+          <ScalarProperty Name="DeliveryUSADate" ColumnName="DeliveryUSADate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="WebsiteAccountId" ColumnName="WebsiteAccountId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="TrackingNo" ColumnName="TrackingNo" />
+          <ScalarProperty Name="OrderOutboundNo" ColumnName="OrderOutboundNo" />
+          <ScalarProperty Name="OrderOutboundId" ColumnName="OrderOutboundId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerBalanceHistories">
+      <EntityTypeMapping TypeName="Ecms_V10Model.CustomerBalanceHistory">
+        <MappingFragment StoreEntitySet="CustomerBalanceHistory">
+          <ScalarProperty Name="CreatedUserCode" ColumnName="CreatedUserCode" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CustomerBalanceHistoryId" ColumnName="CustomerBalanceHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebsiteAccountVisas">
+      <EntityTypeMapping TypeName="Ecms_V10Model.WebsiteAccountVisa">
+        <MappingFragment StoreEntitySet="WebsiteAccountVisa">
+          <ScalarProperty Name="VisaNo" ColumnName="VisaNo" />
+          <ScalarProperty Name="WebsiteAccountId" ColumnName="WebsiteAccountId" />
+          <ScalarProperty Name="WebsiteAccountVisaId" ColumnName="WebsiteAccountVisaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderOutboundHistories">
+      <EntityTypeMapping TypeName="Ecms_V10Model.OrderOutboundHistory">
+        <MappingFragment StoreEntitySet="OrderOutboundHistory">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OrderOutboundId" ColumnName="OrderOutboundId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="OOHistoryId" ColumnName="OOHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mst_VisaAccount">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Mst_VisaAccount">
+        <MappingFragment StoreEntitySet="Mst_VisaAccount">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="VisaNo" ColumnName="VisaNo" />
+          <ScalarProperty Name="VisaId" ColumnName="VisaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebsiteAccounts">
+      <EntityTypeMapping TypeName="Ecms_V10Model.WebsiteAccount">
+        <MappingFragment StoreEntitySet="WebsiteAccount">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="AccountWebsiteNo" ColumnName="AccountWebsiteNo" />
+          <ScalarProperty Name="WebsiteId" ColumnName="WebsiteId" />
+          <ScalarProperty Name="WebsiteAccountId" ColumnName="WebsiteAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mst_SysAuto">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Mst_SysAuto">
+        <MappingFragment StoreEntitySet="Mst_SysAuto">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rpt_DeliverlyCPDetail">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Rpt_DeliverlyCPDetail">
+        <MappingFragment StoreEntitySet="Rpt_DeliverlyCPDetail">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+          <ScalarProperty Name="RptDeliverlyId" ColumnName="RptDeliverlyId" />
+          <ScalarProperty Name="CPDetailId" ColumnName="CPDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rpt_DeliverlyConfirmPrint">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Rpt_DeliverlyConfirmPrint">
+        <MappingFragment StoreEntitySet="Rpt_DeliverlyConfirmPrint">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DeliverlyMobile" ColumnName="DeliverlyMobile" />
+          <ScalarProperty Name="DeliverlyPosition" ColumnName="DeliverlyPosition" />
+          <ScalarProperty Name="DeliverlyFullName" ColumnName="DeliverlyFullName" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="RptDeliverlyId" ColumnName="RptDeliverlyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inv_StockBalance">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Inv_StockBalance">
+        <MappingFragment StoreEntitySet="Inv_StockBalance">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="StockBalanceId" ColumnName="StockBalanceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inv_StockInOutDetail">
+      <EntityTypeMapping TypeName="Ecms_V10Model.Inv_StockInOutDetail">
+        <MappingFragment StoreEntitySet="Inv_StockInOutDetail">
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="StockInOutId" ColumnName="StockInOutId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

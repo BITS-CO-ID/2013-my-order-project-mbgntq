@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../New_Page_3_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:73px;
+    top:191px;
+    width:284px;
+    height:79px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:290px;
+    height:85px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:280px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
